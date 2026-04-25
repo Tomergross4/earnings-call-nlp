@@ -1,6 +1,6 @@
-"""Render `docs/writeup.md` to `outputs/writeup.pdf` in the Earnings Briefing
-visual format (purple header, KPI cards, orange section banners, color-coded
-results table, per-ticker commentary cards, footer)."""
+"""Render `docs/writeup.md` to `outputs/writeup.pdf` as a clean executive
+briefing — McKinsey/Goldman aesthetic: single deep-navy accent, charcoal text,
+hairline rules, generous whitespace, no decorative banners."""
 from __future__ import annotations
 
 import datetime as dt
@@ -31,22 +31,26 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "docs" / "writeup.md"
 OUT = ROOT / "outputs" / "writeup.pdf"
 
-PURPLE = HexColor("#5B2C83")
-PURPLE_LIGHT = HexColor("#EDE4F2")
-ORANGE = HexColor("#E8833A")
-GREEN = HexColor("#2E8B57")
-GREEN_LIGHT = HexColor("#DDEFE0")
-RED = HexColor("#C04040")
-RED_LIGHT = HexColor("#F5DADA")
-GREY_DARK = HexColor("#333333")
-GREY_MED = HexColor("#777777")
-GREY_LIGHT = HexColor("#E5E5E5")
-GREY_BAND = HexColor("#F9F9F9")
+# --- restrained executive palette --------------------------------------------
+INK         = HexColor("#1A1A1A")  # primary text — near-black
+CHARCOAL    = HexColor("#3F3F46")  # body text
+SLATE       = HexColor("#52525B")  # secondary text
+MUTED       = HexColor("#737373")  # captions, footer
+HAIRLINE    = HexColor("#D4D4D8")  # rules, table grid
+RULE_LIGHT  = HexColor("#E5E5E5")  # zebra band
+BAND        = HexColor("#FAFAFA")  # subtle alternating row tint
+PAPER       = HexColor("#FFFFFF")
+
+ACCENT      = HexColor("#0F4C81")  # deep navy — single brand color
+ACCENT_SOFT = HexColor("#E8EEF4")  # navy at 8% — used only for header underline strip
+UP          = HexColor("#15803D")  # muted forest green
+DOWN        = HexColor("#B91C1C")  # muted brick red
 
 PAGE_W, PAGE_H = LETTER
-MARGIN = 0.6 * inch
+MARGIN = 0.75 * inch
 CONTENT_W = PAGE_W - 2 * MARGIN
-SECTION_GAP = 8
+SECTION_GAP = 14
+PARA_GAP = 6
 
 
 # --- inline markdown → reportlab-flavoured mini-HTML -------------------------
@@ -59,10 +63,12 @@ _MD_LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 
 def _inline(text: str) -> str:
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    text = _INLINE_CODE.sub(r'<font face="Courier" size="9">\1</font>', text)
+    text = _INLINE_CODE.sub(
+        r'<font face="Courier" size="9" color="#3F3F46">\1</font>', text
+    )
     text = _BOLD.sub(r"<b>\1</b>", text)
     text = _ITALIC.sub(r"<i>\1</i>", text)
-    text = _MD_LINK.sub(r'<link href="\2" color="#5B2C83">\1</link>', text)
+    text = _MD_LINK.sub(r'<link href="\2" color="#0F4C81">\1</link>', text)
     return text
 
 
@@ -71,63 +77,83 @@ def _make_styles() -> dict:
     return {
         "Body": ParagraphStyle(
             "Body", parent=ss["BodyText"], fontName="Helvetica",
-            fontSize=10, leading=14, spaceAfter=4, textColor=GREY_DARK,
+            fontSize=10, leading=15, spaceAfter=PARA_GAP, textColor=CHARCOAL,
         ),
         "BodyTight": ParagraphStyle(
             "BodyTight", parent=ss["BodyText"], fontName="Helvetica",
-            fontSize=9.5, leading=12, spaceAfter=3, textColor=GREY_DARK,
+            fontSize=9.5, leading=13, spaceAfter=3, textColor=CHARCOAL,
         ),
-        "H2Sub": ParagraphStyle(
-            "H2Sub", parent=ss["BodyText"], fontName="Helvetica-Bold",
-            fontSize=11, leading=14, spaceBefore=2, spaceAfter=8,
-            textColor=PURPLE,
+        "Lede": ParagraphStyle(
+            # First paragraph after a section header — slightly larger, charcoal,
+            # no special color treatment. Lets typography do the hierarchy work.
+            "Lede", parent=ss["BodyText"], fontName="Helvetica",
+            fontSize=10.5, leading=15.5, spaceBefore=2, spaceAfter=PARA_GAP + 2,
+            textColor=INK,
         ),
         "H3": ParagraphStyle(
             "H3", parent=ss["Heading3"], fontName="Helvetica-Bold",
-            fontSize=12, leading=15, spaceBefore=10, spaceAfter=4,
-            textColor=PURPLE,
+            fontSize=11.5, leading=14, spaceBefore=14, spaceAfter=4,
+            textColor=INK,
         ),
-        "Commentary": ParagraphStyle(
-            "Commentary", parent=ss["BodyText"], fontName="Helvetica-Oblique",
-            fontSize=9.5, leading=12.5, spaceAfter=4, textColor=PURPLE,
-            leftIndent=8, rightIndent=8,
+        "Pullquote": ParagraphStyle(
+            # Italic, indented, quiet color. Used for `_commentary`.
+            "Pullquote", parent=ss["BodyText"], fontName="Helvetica-Oblique",
+            fontSize=10, leading=14, spaceAfter=PARA_GAP, textColor=SLATE,
+            leftIndent=12, rightIndent=12,
         ),
         "Callout": ParagraphStyle(
+            # Key finding — bold, near-black, sits next to a thin accent rule.
             "Callout", parent=ss["BodyText"], fontName="Helvetica-Bold",
-            fontSize=10, leading=14, spaceAfter=4, textColor=PURPLE,
-            leftIndent=8, rightIndent=8,
+            fontSize=10.5, leading=15, spaceAfter=PARA_GAP, textColor=INK,
+            leftIndent=14, rightIndent=8,
         ),
         "FigCaption": ParagraphStyle(
             "FigCaption", parent=ss["BodyText"], fontName="Helvetica-Oblique",
-            fontSize=9, leading=11, spaceAfter=2, textColor=GREY_MED,
+            fontSize=8.5, leading=11, spaceAfter=2, textColor=MUTED,
             alignment=1,
         ),
         "Code": ParagraphStyle(
             "Code", parent=ss["BodyText"], fontName="Courier",
-            fontSize=8.5, leading=11, backColor=HexColor("#F7F4F9"),
-            borderColor=PURPLE_LIGHT, borderWidth=0.5, borderPadding=6,
-            leftIndent=10, rightIndent=10, spaceBefore=4, spaceAfter=6,
-            textColor=GREY_DARK,
+            fontSize=8.5, leading=11.5, backColor=BAND,
+            borderColor=HAIRLINE, borderWidth=0.5, borderPadding=8,
+            leftIndent=12, rightIndent=12, spaceBefore=4, spaceAfter=8,
+            textColor=CHARCOAL,
         ),
-        "KpiValue": ParagraphStyle(
-            "KpiValue", fontName="Helvetica-Bold", fontSize=20, leading=22,
-            alignment=1, textColor=colors.white,
+        # ---- cover-only styles ---------------------------------------------
+        "Eyebrow": ParagraphStyle(
+            # Tiny uppercase tracking-out label above the title (e.g. "BRIEFING").
+            "Eyebrow", fontName="Helvetica-Bold", fontSize=8, leading=10,
+            textColor=ACCENT, spaceAfter=10,
+        ),
+        "Title": ParagraphStyle(
+            "Title", fontName="Helvetica-Bold", fontSize=26, leading=30,
+            textColor=INK, spaceAfter=4,
+        ),
+        "Subtitle": ParagraphStyle(
+            "Subtitle", fontName="Helvetica", fontSize=12, leading=16,
+            textColor=SLATE, spaceAfter=10,
+        ),
+        "Byline": ParagraphStyle(
+            "Byline", fontName="Helvetica", fontSize=9, leading=12,
+            textColor=MUTED,
+        ),
+        "KpiNumber": ParagraphStyle(
+            "KpiNumber", fontName="Helvetica-Bold", fontSize=22, leading=24,
+            textColor=INK, alignment=0,
         ),
         "KpiLabel": ParagraphStyle(
-            "KpiLabel", fontName="Helvetica", fontSize=8, leading=10,
-            alignment=1, textColor=colors.white,
+            "KpiLabel", fontName="Helvetica-Bold", fontSize=7.5, leading=10,
+            textColor=MUTED, alignment=0,
         ),
-        "BannerH1": ParagraphStyle(
-            "BannerH1", fontName="Helvetica-Bold", fontSize=20, leading=24,
-            textColor=colors.white,
+        # ---- section header styles -----------------------------------------
+        "SectionNum": ParagraphStyle(
+            # Big quiet number on the left of the section header (e.g. "06").
+            "SectionNum", fontName="Helvetica-Bold", fontSize=11, leading=14,
+            textColor=ACCENT,
         ),
-        "BannerSub": ParagraphStyle(
-            "BannerSub", fontName="Helvetica", fontSize=10, leading=13,
-            textColor=colors.white,
-        ),
-        "SectionBanner": ParagraphStyle(
-            "SectionBanner", fontName="Helvetica-Bold", fontSize=12, leading=16,
-            textColor=colors.white,
+        "SectionTitle": ParagraphStyle(
+            "SectionTitle", fontName="Helvetica-Bold", fontSize=14, leading=17,
+            textColor=INK,
         ),
     }
 
@@ -137,143 +163,198 @@ STYLES = _make_styles()
 
 # --- custom Flowables --------------------------------------------------------
 
-class HeaderBanner(Flowable):
-    """Purple cover banner with title, subtitle, and orange accent strip."""
-    def __init__(self, title: str, subtitle: str, width: float):
+class Rule(Flowable):
+    """A horizontal hairline. Defaults to full content width, light gray, 0.5pt."""
+    def __init__(self, width: float, color=HAIRLINE, thickness: float = 0.5,
+                 space_before: float = 0, space_after: float = 0):
         super().__init__()
-        self.title = title
-        self.subtitle = subtitle
         self.width = width
-        self.accent_h = 4
-        self.banner_h = 1.05 * inch
-        self.height = self.banner_h + self.accent_h
+        self.color = color
+        self.thickness = thickness
+        self.space_before = space_before
+        self.space_after = space_after
+        self.height = thickness + space_before + space_after
 
     def wrap(self, *_):
         return self.width, self.height
 
     def draw(self):
         c = self.canv
-        c.setFillColor(PURPLE)
-        c.rect(0, self.accent_h, self.width, self.banner_h, fill=1, stroke=0)
-        c.setFillColor(ORANGE)
-        c.rect(0, 0, self.width, self.accent_h, fill=1, stroke=0)
-        c.setFillColor(colors.white)
-        c.setFont("Helvetica-Bold", 22)
-        c.drawString(18, self.height - 38, self.title)
-        c.setFont("Helvetica", 10)
-        for i, line in enumerate(self.subtitle.split("\n")):
-            c.drawString(18, self.height - 60 - i * 13, line)
+        c.setStrokeColor(self.color)
+        c.setLineWidth(self.thickness)
+        y = self.space_after + self.thickness / 2
+        c.line(0, y, self.width, y)
 
 
 _SECTION_NUM_RE = re.compile(r"^(\d+)\.\s+(.*)$")
 
 
-class SectionBanner(Flowable):
-    """Orange section banner with optional purple numeric badge on the left."""
-    def __init__(self, text: str, width: float, color=ORANGE):
+class SectionHeader(Flowable):
+    """Section header with quiet "0N" number, bold uppercase title, thin rule.
+
+    Renders like a McKinsey slide title: small accent number → bold black title
+    → 0.6pt accent rule that runs the full content width below the text.
+    No solid-color banner."""
+
+    def __init__(self, text: str, width: float):
         super().__init__()
-        self.color = color
         self.width = width
-        self.height = 0.30 * inch
         m = _SECTION_NUM_RE.match(text.strip())
         if m:
-            self.number = m.group(1)
-            self.text = m.group(2)
+            self.number = m.group(1).zfill(2)
+            self.title = m.group(2).upper()
         else:
             self.number = None
-            self.text = text
+            self.title = text.upper()
+        # Layout constants
+        self._title_y = 14
+        self._rule_y = 8
+        self.height = 30
 
     def wrap(self, *_):
         return self.width, self.height
 
     def draw(self):
         c = self.canv
-        c.setFillColor(self.color)
-        c.rect(0, 0, self.width, self.height, fill=1, stroke=0)
-        text_x = 14
+        # Number + title baseline
+        x = 0
         if self.number is not None:
-            badge_size = self.height - 8
-            badge_x = 6
-            badge_y = 4
-            c.setFillColor(PURPLE)
-            c.rect(badge_x, badge_y, badge_size, badge_size, fill=1, stroke=0)
-            c.setFillColor(colors.white)
-            c.setFont("Helvetica-Bold", 12)
-            num_w = c.stringWidth(self.number, "Helvetica-Bold", 12)
-            c.drawString(
-                badge_x + (badge_size - num_w) / 2,
-                badge_y + (badge_size - 9) / 2,
-                self.number,
-            )
-            text_x = badge_x + badge_size + 10
-        c.setFillColor(colors.white)
-        c.setFont("Helvetica-Bold", 12)
-        c.drawString(text_x, 8, self.text.upper())
+            c.setFillColor(ACCENT)
+            c.setFont("Helvetica-Bold", 10)
+            c.drawString(x, self._title_y, self.number)
+            x += c.stringWidth(self.number, "Helvetica-Bold", 10) + 12
+        c.setFillColor(INK)
+        c.setFont("Helvetica-Bold", 13.5)
+        c.drawString(x, self._title_y, self.title)
+        # Hairline rule below
+        c.setStrokeColor(ACCENT)
+        c.setLineWidth(0.6)
+        c.line(0, self._rule_y, self.width, self._rule_y)
 
 
-def _kpi_row(cards: list[tuple[str, str]], width: float) -> Table:
-    """Row of equal-width purple KPI cards: (value, label)."""
-    cells = [
-        [Paragraph(v, STYLES["KpiValue"]), Paragraph(l, STYLES["KpiLabel"])]
-        for v, l in cards
-    ]
-    inner_tables = []
-    for pair in cells:
-        t = Table([[pair[0]], [pair[1]]], colWidths=[width / len(cards) - 4])
-        t.setStyle(TableStyle([
-            ("BACKGROUND", (0, 0), (-1, -1), PURPLE),
-            ("TEXTCOLOR", (0, 0), (-1, -1), colors.white),
-            ("ALIGN", (0, 0), (-1, -1), "CENTER"),
-            ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-            ("TOPPADDING", (0, 0), (-1, 0), 12),
-            ("BOTTOMPADDING", (0, 0), (-1, 0), 0),
-            ("TOPPADDING", (0, 1), (-1, 1), 0),
-            ("BOTTOMPADDING", (0, 1), (-1, 1), 12),
+class Cover(Flowable):
+    """Cover block: eyebrow, title, subtitle, byline, separator rule.
+    Replaces the old purple banner with a clean editorial layout."""
+
+    def __init__(self, eyebrow: str, title: str, subtitle: str, byline: str,
+                 width: float):
+        super().__init__()
+        self.width = width
+        self.eyebrow = eyebrow
+        self.title = title
+        self.subtitle = subtitle
+        self.byline = byline
+        # Total stacked height (paragraphs sized in draw via canvas — we
+        # measure manually here for a tighter layout).
+        self.height = 1.55 * inch
+
+    def wrap(self, *_):
+        return self.width, self.height
+
+    def draw(self):
+        c = self.canv
+        # Eyebrow — tracked-out caps in accent
+        c.setFillColor(ACCENT)
+        c.setFont("Helvetica-Bold", 8.5)
+        c.drawString(0, self.height - 12, self.eyebrow)
+        # Accent square next to the eyebrow
+        eyebrow_w = c.stringWidth(self.eyebrow, "Helvetica-Bold", 8.5)
+        c.setFillColor(ACCENT)
+        c.rect(eyebrow_w + 8, self.height - 11, 4, 4, fill=1, stroke=0)
+        # Title
+        c.setFillColor(INK)
+        c.setFont("Helvetica-Bold", 26)
+        c.drawString(0, self.height - 48, self.title)
+        # Subtitle
+        c.setFillColor(SLATE)
+        c.setFont("Helvetica", 12)
+        c.drawString(0, self.height - 70, self.subtitle)
+        # Hairline above byline
+        c.setStrokeColor(HAIRLINE)
+        c.setLineWidth(0.5)
+        c.line(0, self.height - 92, self.width, self.height - 92)
+        # Byline
+        c.setFillColor(MUTED)
+        c.setFont("Helvetica", 9)
+        c.drawString(0, self.height - 108, self.byline)
+
+
+def _kpi_strip(cards: list[tuple[str, str]], width: float) -> Table:
+    """Horizontal strip of KPIs — Bloomberg-style facts bar.
+
+    Each cell: bold number on top in INK, thin uppercase label below in MUTED.
+    No fill, no border, just thin vertical hairlines between cells and a
+    single accent rule above and a single hairline below."""
+    n = len(cards)
+    inner_w = width / n
+
+    cells_row = []
+    for value, label in cards:
+        cell = Table(
+            [
+                [Paragraph(value, STYLES["KpiNumber"])],
+                [Paragraph(label.upper(), STYLES["KpiLabel"])],
+            ],
+            colWidths=[inner_w - 16],
+        )
+        cell.setStyle(TableStyle([
+            ("LEFTPADDING",   (0, 0), (-1, -1), 0),
+            ("RIGHTPADDING",  (0, 0), (-1, -1), 0),
+            ("TOPPADDING",    (0, 0), (-1, 0), 0),
+            ("BOTTOMPADDING", (0, 0), (-1, 0), 4),
+            ("TOPPADDING",    (0, 1), (-1, 1), 0),
+            ("BOTTOMPADDING", (0, 1), (-1, 1), 0),
         ]))
-        inner_tables.append(t)
-    outer = Table([inner_tables], colWidths=[width / len(cards)] * len(cards))
-    outer.setStyle(TableStyle([
-        ("ALIGN", (0, 0), (-1, -1), "CENTER"),
-        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 2),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 2),
-        ("TOPPADDING", (0, 0), (-1, -1), 0),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
-    ]))
+        cells_row.append(cell)
+
+    outer = Table([cells_row], colWidths=[inner_w] * n)
+    style = [
+        ("LINEABOVE", (0, 0), (-1, 0), 1.2, ACCENT),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.5, HAIRLINE),
+        ("VALIGN",  (0, 0), (-1, -1), "TOP"),
+        ("LEFTPADDING",   (0, 0), (-1, -1), 16),
+        ("RIGHTPADDING",  (0, 0), (-1, -1), 16),
+        ("TOPPADDING",    (0, 0), (-1, -1), 14),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 14),
+    ]
+    # Subtle vertical hairlines between cells (not at outer edges)
+    for i in range(1, n):
+        style.append(("LINEBEFORE", (i, 0), (i, -1), 0.5, HAIRLINE))
+    outer.setStyle(TableStyle(style))
     return outer
 
 
 def _commentary(text: str) -> Table:
-    """Italic purple commentary box with left border, matching the screenshot style."""
-    p = Paragraph(_inline(text), STYLES["Commentary"])
+    """Quiet pull-quote: italic slate text, indented, with a thin accent rule
+    on the left. No filled background."""
+    p = Paragraph(_inline(text), STYLES["Pullquote"])
     t = Table([[p]], colWidths=[CONTENT_W])
     t.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), PURPLE_LIGHT),
-        ("LINEBEFORE", (0, 0), (0, -1), 3, PURPLE),
-        ("LEFTPADDING", (0, 0), (-1, -1), 10),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 10),
-        ("TOPPADDING", (0, 0), (-1, -1), 8),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+        ("LINEBEFORE",     (0, 0), (0, -1), 1.2, ACCENT),
+        ("LEFTPADDING",    (0, 0), (-1, -1), 14),
+        ("RIGHTPADDING",   (0, 0), (-1, -1), 4),
+        ("TOPPADDING",     (0, 0), (-1, -1), 4),
+        ("BOTTOMPADDING",  (0, 0), (-1, -1), 4),
     ]))
     return t
 
 
 def _callout(text: str) -> Table:
-    """Key-finding sidebar callout: purple left rule, light-purple fill, bold copy."""
+    """Key-finding sidebar — thin accent left rule, bold near-black text.
+    No filled background, no purple anything."""
     p = Paragraph(_inline(text), STYLES["Callout"])
     t = Table([[p]], colWidths=[CONTENT_W])
     t.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), PURPLE_LIGHT),
-        ("LINEBEFORE", (0, 0), (0, -1), 2, PURPLE),
-        ("LEFTPADDING", (0, 0), (-1, -1), 12),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 12),
-        ("TOPPADDING", (0, 0), (-1, -1), 8),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+        ("LINEBEFORE",     (0, 0), (0, -1), 2, ACCENT),
+        ("LEFTPADDING",    (0, 0), (-1, -1), 14),
+        ("RIGHTPADDING",   (0, 0), (-1, -1), 8),
+        ("TOPPADDING",     (0, 0), (-1, -1), 6),
+        ("BOTTOMPADDING",  (0, 0), (-1, -1), 6),
     ]))
     return t
 
 
-# --- results table (color-coded numeric cells) -------------------------------
+# --- results table (clean editorial style) -----------------------------------
 
 _NUM_RE = re.compile(r"^([-+])?(\d+(?:\.\d+)?)(%?)$")
 
@@ -290,35 +371,41 @@ def _is_signed_numeric(cell: str) -> tuple[bool, float]:
 
 
 def _results_table(rows: list[list[str]], highlight_row: int | None = None) -> Table:
-    """Build a Table from 2D text rows, coloring signed-numeric cells green/red.
-    First row is header. Winner row (if given) is highlighted purple."""
+    """Clean editorial table: navy hairline above + below header, zebra row
+    bands, signed numerics get just colored *text* (no filled cells), winner
+    row gets a left accent rule + bold text.
+
+    First row is the header. `highlight_row` is 1-based index into data rows."""
     header = rows[0]
     data_rows = rows[1:]
-    col_w = [CONTENT_W * 0.22] + [(CONTENT_W * 0.78) / (len(header) - 1)] * (len(header) - 1)
+    col_w = [CONTENT_W * 0.24] + [(CONTENT_W * 0.76) / (len(header) - 1)] * (len(header) - 1)
 
-    body = [[Paragraph(f"<b>{_inline(c)}</b>", STYLES["BodyTight"]) for c in header]]
+    body = [[Paragraph(_inline(c), STYLES["BodyTight"]) for c in header]]
     ts = TableStyle([
-        ("BACKGROUND", (0, 0), (-1, 0), PURPLE),
-        ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-        ("LINEABOVE", (0, 0), (-1, 0), 1, PURPLE_LIGHT),
-        ("LINEBELOW", (0, 0), (-1, 0), 1, PURPLE_LIGHT),
-        ("ALIGN", (1, 0), (-1, -1), "CENTER"),
+        # Header
+        ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+        ("TEXTCOLOR", (0, 0), (-1, 0), INK),
+        ("LINEABOVE", (0, 0), (-1, 0), 0.8, ACCENT),
+        ("LINEBELOW", (0, 0), (-1, 0), 0.5, ACCENT),
+        # Body grid — only horizontal hairlines, no vertical lines
+        ("LINEBELOW", (0, -1), (-1, -1), 0.6, ACCENT),
+        # Alignment
+        ("ALIGN", (1, 0), (-1, -1), "RIGHT"),
         ("ALIGN", (0, 0), (0, -1), "LEFT"),
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-        ("GRID", (0, 0), (-1, -1), 0.4, GREY_LIGHT),
-        ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
-        ("TOPPADDING", (0, 0), (-1, -1), 5),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
-        ("LEFTPADDING", (0, 0), (-1, -1), 5),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
-        ("RIGHTPADDING", (1, 0), (-1, -1), 8),
+        # Spacing
+        ("TOPPADDING", (0, 0), (-1, -1), 7),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+        ("LEFTPADDING", (0, 0), (-1, -1), 6),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+        ("RIGHTPADDING", (-1, 0), (-1, -1), 12),
     ])
 
     for r_idx, row in enumerate(data_rows, start=1):
         rendered = []
         is_winner = highlight_row is not None and r_idx == highlight_row
         if not is_winner and r_idx % 2 == 0:
-            ts.add("BACKGROUND", (0, r_idx), (-1, r_idx), GREY_BAND)
+            ts.add("BACKGROUND", (0, r_idx), (-1, r_idx), BAND)
         for c_idx, cell in enumerate(row):
             txt = cell.strip()
             is_num, val = _is_signed_numeric(txt)
@@ -329,15 +416,15 @@ def _results_table(rows: list[list[str]], highlight_row: int | None = None) -> T
                 rendered.append(Paragraph(_inline(txt), style))
             if c_idx > 0 and is_num and not is_winner:
                 if val > 0:
-                    ts.add("BACKGROUND", (c_idx, r_idx), (c_idx, r_idx), GREEN_LIGHT)
-                    ts.add("TEXTCOLOR", (c_idx, r_idx), (c_idx, r_idx), GREEN)
+                    ts.add("TEXTCOLOR", (c_idx, r_idx), (c_idx, r_idx), UP)
                 elif val < 0:
-                    ts.add("BACKGROUND", (c_idx, r_idx), (c_idx, r_idx), RED_LIGHT)
-                    ts.add("TEXTCOLOR", (c_idx, r_idx), (c_idx, r_idx), RED)
+                    ts.add("TEXTCOLOR", (c_idx, r_idx), (c_idx, r_idx), DOWN)
         body.append(rendered)
         if is_winner:
-            ts.add("BACKGROUND", (0, r_idx), (-1, r_idx), PURPLE)
-            ts.add("TEXTCOLOR", (0, r_idx), (-1, r_idx), colors.white)
+            ts.add("LINEBEFORE", (0, r_idx), (0, r_idx), 2.5, ACCENT)
+            ts.add("TEXTCOLOR", (0, r_idx), (-1, r_idx), INK)
+            ts.add("FONTNAME", (0, r_idx), (-1, r_idx), "Helvetica-Bold")
+            ts.add("BACKGROUND", (0, r_idx), (-1, r_idx), ACCENT_SOFT)
 
     t = Table(body, colWidths=col_w, repeatRows=1, hAlign="LEFT")
     t.setStyle(ts)
@@ -380,7 +467,7 @@ _UNORDERED_PREFIX = re.compile(r"^\s*[-*]\s+(.*)")
 def _parse_list(lines: list[str], i: int):
     """Return a list of flowables (one per item) preserving author-written
     numeric prefixes so list numbering doesn't restart after a paragraph
-    break. Bullet lists still use a real ListFlowable."""
+    break. Bullet lists use a real ListFlowable with a small accent dot."""
     ordered = bool(_ORDERED_PREFIX.match(lines[i]))
     j = i
     out: list = []
@@ -392,7 +479,7 @@ def _parse_list(lines: list[str], i: int):
             num = m.group(1)
             raw = re.sub(r"^\[[x ]\]\s*", "", m.group(2))
             p = Paragraph(
-                f"<b><font color='#5B2C83'>{num}.</font></b>&nbsp;&nbsp;{_inline(raw)}",
+                f"<b><font color='#0F4C81'>{num}.</font></b>&nbsp;&nbsp;{_inline(raw)}",
                 STYLES["BodyTight"],
             )
             out.append(p)
@@ -409,7 +496,8 @@ def _parse_list(lines: list[str], i: int):
         j += 1
     flow = ListFlowable(
         items, bulletType="bullet",
-        leftIndent=16, bulletFontSize=9, bulletColor=PURPLE,
+        leftIndent=18, bulletFontSize=8, bulletColor=ACCENT,
+        bulletFontName="Helvetica-Bold",
     )
     return [flow], j
 
@@ -421,11 +509,8 @@ def _maybe_images(line: str) -> list[Path]:
 
 # --- top-level render with section-aware styling -----------------------------
 
-# Map H2 section titles → banner styling behaviour.
-# Sections we want to suppress entirely from the main body because we render
-# them in a custom way (cover + KPI cards). The H1 of the writeup is always
-# replaced by the purple cover banner, never emitted inline.
-SKIP_H2 = {"1. problem and scope"}  # folded into cover subtitle
+# H2s suppressed entirely — folded into cover or rendered specially.
+SKIP_H2 = {"1. problem and scope"}
 
 
 def render(md: str) -> list:
@@ -433,36 +518,39 @@ def render(md: str) -> list:
     lines = md.splitlines()
     i = 0
     para_buf: list[str] = []
-    current_h2: str | None = None
     fig_counter = [0]
-    after_banner = [False]
+    after_section = [False]
+    current_h2 = None
 
     # --- cover ---------------------------------------------------------------
     today = dt.date.today().isoformat()
-    flow.append(HeaderBanner(
-        "Earnings-Call NLP Pipeline",
-        "NLP for Finance — Spring 2026, Assignment 1\n"
-        "Tomer Gross  ·  Generated " + today,
-        CONTENT_W,
+    flow.append(Cover(
+        eyebrow="EARNINGS-CALL NLP   ·   RESEARCH BRIEFING",
+        title="From Transcript to Trading Signal",
+        subtitle="An honest backtest of LLM-extracted earnings-call features across 14 tickers.",
+        byline=f"Tomer Gross   ·   NLP for Finance, Spring 2026   ·   {today}",
+        width=CONTENT_W,
     ))
-    flow.append(Spacer(1, SECTION_GAP))
-    flow.append(_kpi_row(
+    flow.append(Spacer(1, 8))
+    flow.append(_kpi_strip(
         [
-            ("131", "TRANSCRIPTS"),
-            ("14", "TICKERS"),
-            ("8", "SIGNALS TESTED"),
-            ("+0.58", "BEST SHARPE (5D CONTRARIAN SETFIT)"),
+            ("131",   "Transcripts"),
+            ("14",    "Tickers"),
+            ("8",     "Signals tested"),
+            ("+0.58", "Best Sharpe (5d)"),
         ],
         CONTENT_W,
     ))
     flow.append(Spacer(1, SECTION_GAP))
     flow.append(_commentary(
-        "Pipeline parses S&P Capital IQ transcripts, extracts sentiment / wins / risks / guidance "
-        "with gemma3:4b (4-call hybrid), layers FinBERT + Loughran-McDonald lexicon + pre-call momentum, "
-        "and predicts forward excess return over SPY on a strict 70/30 per-ticker temporal split. "
-        "Eight signals compared end-to-end across four horizons (1d / 5d / 21d / 63d); the 5-day "
-        "Contrarian SetFit signal is the headline finding — positive hit rate (0.59), positive rank IC "
-        "(+0.04), and the only positive Sharpe (+0.58) in the suite."
+        "Pipeline parses S&P Capital IQ transcripts, extracts sentiment, wins, risks, and "
+        "guidance with gemma3:4b across a four-call hybrid (overall, CEO, CFO, analyst), "
+        "layers FinBERT and Loughran-McDonald lexicon scores plus pre-call price momentum, "
+        "and predicts forward excess return over SPY on a strict 70/30 per-ticker temporal "
+        "split. Eight signals are compared end-to-end across four horizons (1d, 5d, 21d, 63d). "
+        "The five-day Contrarian SetFit signal is the headline finding — the only configuration "
+        "in the suite with positive hit rate (0.59), positive rank IC (+0.04), and positive "
+        "naïve Sharpe (+0.58)."
     ))
     flow.append(Spacer(1, SECTION_GAP))
 
@@ -477,27 +565,29 @@ def render(md: str) -> list:
         # Sidebar callout: paragraph beginning with ">> "
         if text.startswith(">> "):
             flow.append(_callout(text[3:].strip()))
-            flow.append(Spacer(1, SECTION_GAP // 2))
-            after_banner[0] = False
+            flow.append(Spacer(1, PARA_GAP))
+            after_section[0] = False
             return
         img_paths = _maybe_images(text)
-        # Narrative intro right after an orange banner gets H2Sub styling
-        style = STYLES["H2Sub"] if after_banner[0] else STYLES["Body"]
-        after_banner[0] = False
+        # First paragraph after a section header gets the larger Lede style
+        style = STYLES["Lede"] if after_section[0] else STYLES["Body"]
+        after_section[0] = False
         flow.append(Paragraph(_inline(text), style))
         for img_path in img_paths:
             try:
                 fig_counter[0] += 1
                 caption = img_path.stem.replace("_", " ").title()
                 img = Image(
-                    str(img_path), width=CONTENT_W * 0.6,
-                    height=CONTENT_W * 0.6 * 0.45, kind="proportional",
+                    str(img_path), width=CONTENT_W * 0.62,
+                    height=CONTENT_W * 0.62 * 0.46, kind="proportional",
                 )
                 cap = Paragraph(
-                    f"Figure {fig_counter[0]}: {caption}", STYLES["FigCaption"],
+                    f"FIG. {fig_counter[0]:02d}  ·  {caption}",
+                    STYLES["FigCaption"],
                 )
-                flow.append(KeepTogether([Spacer(1, 4), img, cap]))
-                flow.append(Spacer(1, SECTION_GAP // 2))
+                flow.append(KeepTogether([
+                    Spacer(1, 6), img, Spacer(1, 4), cap, Spacer(1, 4),
+                ]))
             except Exception:
                 pass
 
@@ -505,30 +595,29 @@ def render(md: str) -> list:
         line = lines[i]
         stripped = line.strip()
 
-        # H1 — already rendered as cover banner; skip
+        # H1 — already rendered as cover; skip
         if stripped.startswith("# ") and not stripped.startswith("## "):
             i += 1
             continue
 
-        # H2 — orange section banner
+        # H2 — clean section header, no banner
         if stripped.startswith("## "):
             flush_para()
             title = stripped[3:].strip()
             if title.lower() in SKIP_H2:
-                # skip this section entirely: consume until next H2
                 i += 1
                 while i < len(lines) and not lines[i].strip().startswith("## "):
                     i += 1
                 continue
             current_h2 = title.lower()
             flow.append(Spacer(1, SECTION_GAP))
-            flow.append(SectionBanner(title, CONTENT_W))
-            flow.append(Spacer(1, SECTION_GAP // 2))
-            after_banner[0] = True
+            flow.append(SectionHeader(title, CONTENT_W))
+            flow.append(Spacer(1, 8))
+            after_section[0] = True
             i += 1
             continue
 
-        # H3 — purple subhead (used heavily for ticker stories)
+        # H3 — bold near-black, used for ticker stories
         if stripped.startswith("### "):
             flush_para()
             flow.append(Paragraph(_inline(stripped[4:].strip()), STYLES["H3"]))
@@ -547,8 +636,6 @@ def render(md: str) -> list:
             rows, i = _parse_table_rows(lines, i)
             if rows is None:
                 continue
-            # color-code only in the Results section; detect winner row if any
-            # cell contains the **bold** markdown marker in its row.
             if current_h2 and current_h2.startswith("6. results"):
                 highlight = None
                 for idx, r in enumerate(rows[1:], start=1):
@@ -561,19 +648,21 @@ def render(md: str) -> list:
                 clean_rows = [[c.replace("**", "") for c in r] for r in rows]
                 tbl = _results_table(clean_rows, highlight_row=None)
             flow.append(tbl)
-            flow.append(Spacer(1, SECTION_GAP))
+            flow.append(Spacer(1, PARA_GAP + 2))
             continue
 
         if re.match(r"^\s*(?:\d+\.|[-*])\s+", line):
             flush_para()
             items, i = _parse_list(lines, i)
             flow.extend(items)
-            flow.append(Spacer(1, SECTION_GAP // 3))
+            flow.append(Spacer(1, 4))
             continue
 
         if stripped == "---":
             flush_para()
-            flow.append(Spacer(1, SECTION_GAP // 2))
+            flow.append(Spacer(1, 4))
+            flow.append(Rule(CONTENT_W, color=HAIRLINE, thickness=0.4))
+            flow.append(Spacer(1, 4))
             i += 1
             continue
 
@@ -593,17 +682,29 @@ def render(md: str) -> list:
 
 def _on_page(canvas, doc):
     canvas.saveState()
-    canvas.setStrokeColor(GREY_LIGHT)
-    canvas.setLineWidth(0.6)
-    canvas.line(MARGIN, 0.45 * inch, PAGE_W - MARGIN, 0.45 * inch)
-    canvas.setFillColor(GREY_MED)
+    # Top hairline (skipped on cover page)
+    if doc.page > 1:
+        canvas.setStrokeColor(HAIRLINE)
+        canvas.setLineWidth(0.4)
+        canvas.line(MARGIN, PAGE_H - 0.45 * inch, PAGE_W - MARGIN, PAGE_H - 0.45 * inch)
+        canvas.setFillColor(MUTED)
+        canvas.setFont("Helvetica-Bold", 7.5)
+        canvas.drawString(
+            MARGIN, PAGE_H - 0.35 * inch,
+            "EARNINGS-CALL NLP   ·   RESEARCH BRIEFING",
+        )
+    # Bottom rule + page number
+    canvas.setStrokeColor(HAIRLINE)
+    canvas.setLineWidth(0.4)
+    canvas.line(MARGIN, 0.5 * inch, PAGE_W - MARGIN, 0.5 * inch)
+    canvas.setFillColor(MUTED)
     canvas.setFont("Helvetica", 8)
     canvas.drawString(
-        MARGIN, 0.3 * inch,
-        "Earnings-Call NLP Pipeline  ·  Tomer Gross  ·  Generated " + dt.date.today().isoformat(),
+        MARGIN, 0.34 * inch,
+        f"Tomer Gross   ·   {dt.date.today().isoformat()}",
     )
     canvas.drawRightString(
-        PAGE_W - MARGIN, 0.3 * inch, f"Page {doc.page}",
+        PAGE_W - MARGIN, 0.34 * inch, f"{doc.page:02d}",
     )
     canvas.restoreState()
 
@@ -618,8 +719,8 @@ def main() -> int:
         str(OUT),
         pagesize=LETTER,
         leftMargin=MARGIN, rightMargin=MARGIN,
-        topMargin=MARGIN, bottomMargin=0.65 * inch,
-        title="Earnings-Call NLP Pipeline",
+        topMargin=0.7 * inch, bottomMargin=0.7 * inch,
+        title="Earnings-Call NLP — Research Briefing",
         author="Tomer Gross",
     )
     doc.build(render(md), onFirstPage=_on_page, onLaterPages=_on_page)
