@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Strong revenue growth (30% YoY)",
+    "Significant U.S. commercial growth (54% YoY)",
+    "S&P 500 inclusion",
+    "Record cash flow ($1B in adjusted free cash flow)",
+    "Increased full-year revenue guidance"
+  ],
+  "risks": [
+    "Commoditization of cognition",
+    "Competition in the AI space",
+    "Headwinds in Europe",
+    "Decline in strategic commercial contracts",
+    "Reliance on large customers"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "growth",
+    "commercial",
+    "government",
+    "innovation"
+  ]
+}
+```

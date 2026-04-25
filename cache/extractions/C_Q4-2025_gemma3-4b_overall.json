@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record revenues across multiple businesses",
+    "Improved RoTCE to 11.6%",
+    "Significant capital return ($17.5 billion)",
+    "Successful completion of international divestitures (Poland, Russia, Banamex)",
+    "High AI tool adoption (70%+) and deployment"
+  ],
+  "risks": [
+    "Macroeconomic uncertainty",
+    "Commodity price volatility",
+    "Potential for continued inflation",
+    "Geopolitical risks (China, Europe)",
+    "Ongoing transformation challenges"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "growth",
+    "transformation",
+    "capital efficiency",
+    "ai",
+    "markets"
+  ]
+}

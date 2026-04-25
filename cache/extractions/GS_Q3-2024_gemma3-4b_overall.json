@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.2,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record revenues across multiple segments",
+    "Strong backlog growth driven by advisory",
+    "Record FICC financing revenues",
+    "Record AWM revenues and assets under supervision",
+    "Continued strong fundraising in Alternatives"
+  ],
+  "risks": [
+    "Narrowing consumer footprint impacting ROE",
+    "Regulatory concerns regarding capital requirements and Basel III revisions",
+    "Potential impact of macroeconomic uncertainty and geopolitical instability",
+    "Select items impacting EPS and ROE",
+    "Competition from nonbank trading venues"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "markets",
+    "banking",
+    "alternatives",
+    "regulation",
+    "macro"
+  ]
+}

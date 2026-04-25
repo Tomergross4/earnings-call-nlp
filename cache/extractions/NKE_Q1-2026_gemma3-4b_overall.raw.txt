@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "Running business grew over 20%",
+    "House of Innovation in New York drove double-digit revenue increases",
+    "Successful launch of South Congress store redesign",
+    "New partnership with SKIMS",
+    "Victory at Western States 100 race by ACG professional racer Caleb Olson"
+  ],
+  "risks": [
+    "10% decline in Greater China revenue",
+    "Gross margin decline due to discounts and tariffs",
+    "Slowdown in organic digital traffic",
+    "Challenges in China marketplace requiring investment",
+    "Soft consumer demand and tariff uncertainty"
+  ],
+  "guidance": "lowered",
+  "themes": [
+    "sportswear",
+    "china",
+    "pricing",
+    "innovation",
+    "marketplace"
+  ]
+}
+```

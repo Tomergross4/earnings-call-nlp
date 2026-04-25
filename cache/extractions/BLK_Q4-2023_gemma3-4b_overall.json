@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Acquisition of Global Infrastructure Partners (GIP) announced",
+    "Significant net inflows in Q4 and full year (2023)",
+    "Increased ETF net inflows",
+    "Strong performance in private markets",
+    "Strategic re-architecture of organization to simplify operations"
+  ],
+  "risks": [
+    "Market volatility impacting operating income",
+    "Foreign exchange movements negatively impacting revenue",
+    "Index fund outflows",
+    "Restructuring charges impacting profitability",
+    "Potential changes in tax legislation"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "infrastructure",
+    "private markets",
+    "capital markets",
+    "growth",
+    "acquisitions"
+  ]
+}

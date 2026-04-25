@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.15,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "18% year-on-year increase in firm-wide IB fees",
+    "Strong net inflows across AWM, CCB, and Wealth Management",
+    "First Republic contributed $1.7 billion of revenue and $668 million of net income",
+    "Home Lending revenue up 10% year-on-year",
+    "Investment Banking revenue up 27% year-on-year"
+  ],
+  "risks": [
+    "$725 million increase to FDIC special assessment",
+    "Market revenue down $400 million or 5% year-on-year",
+    "Expenses up $1.8 billion or 9% year-on-year",
+    "Credit costs up $1.9 billion",
+    "Deposit margin compression and lower deposit balances in CCB"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "banking",
+    "markets",
+    "interest_rates",
+    "credit",
+    "capital"
+  ]
+}
+```

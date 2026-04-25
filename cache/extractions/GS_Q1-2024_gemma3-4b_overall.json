@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.45,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Reopening of capital markets observed",
+    "Record FICC financing revenues",
+    "Record Asset & Wealth Management assets under supervision",
+    "Strong growth in intermediation revenues",
+    "Positive reception to IPOs (Galderma, Reddit, Rank)"
+  ],
+  "risks": [
+    "Uncertain macroeconomic environment (Fed rate cuts, inflation concerns)",
+    "Potential slowdown in M&A activity",
+    "Geopolitical tensions",
+    "CRE exposure",
+    "Reliance on discretionary incentives"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "capital markets",
+    "artificial intelligence",
+    "macro",
+    "wealth management",
+    "fintech"
+  ]
+}

@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.75,
+  "rationale": "The CEO expresses significant concerns about inflated asset prices, a turbulent future, and a preference for patient capital deployment, indicating a bearish outlook."
+}
+```

@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record $15 billion revenue",
+    "35% increase in consolidated adjusted EBITDA",
+    "Over $4.4 billion in AI semiconductor revenue (46% year-on-year growth)",
+    "Tomahawk 6 switch enables clusters of more than 100,000 AI accelerators",
+    "Infrastructure software revenue up 25% year-on-year"
+  ],
+  "risks": [
+    "Non-AI semiconductor revenue down 5% year-on-year",
+    "Industrial and wireless revenues down sequentially",
+    "Potential for lower gross margin due to XPU revenue mix",
+    "Economic environment impacting customer investment",
+    "Reliance on hyperscaler customer deployments"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "semiconductors",
+    "infrastructure",
+    "growth",
+    "hardware"
+  ]
+}

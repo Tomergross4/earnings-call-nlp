@@ -1,0 +1,24 @@
+```json
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Strong net income of $5.1 billion",
+    "Diluted earnings per share of $1.42",
+    "ROE of 11.7% and ROTCE of 13.9%",
+    "16% growth in fee-based revenue",
+    "Credit card portfolio balances growing for 13 consecutive quarters"
+  ],
+  "risks": [
+    "Net interest income decline",
+    "Deposit costs increasing",
+    "Weak commercial loan demand",
+    "Commercial real estate office portfolio challenges",
+    "Sweep deposit pricing increases"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "credit","macro","deposit","pricing","strategy"
+  ]
+}
+```

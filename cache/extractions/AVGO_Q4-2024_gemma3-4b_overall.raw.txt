@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record fiscal year 2024 revenue ($51.6 billion)",
+    "45% year-over-year revenue growth",
+    "Record $22 billion in cash returned to shareholders",
+    "70% operating margin for VMware",
+    "Significant growth in AI revenue (220% YoY)"
+  ],
+  "risks": [
+    "Cyclical bottom in non-AI semiconductor revenue",
+    "Dependence on hyperscaler AI XPU deployments",
+    "Potential delays in Section 174 reenactment",
+    "Industrial segment decline",
+    "Macroeconomic uncertainty"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "semiconductors",
+    "vmware",
+    "financial_results",
+    "growth"
+  ]
+}
+```

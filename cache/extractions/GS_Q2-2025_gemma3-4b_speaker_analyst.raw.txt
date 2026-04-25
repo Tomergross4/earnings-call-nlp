@@ -1,0 +1,3 @@
+```json
+{"sentiment": 0.25, "rationale": "The analyst expresses cautious optimism regarding Goldman's performance, highlighting strong growth in financing and investment banking while acknowledging concerns about capital management and potential risks, indicating a neutral sentiment."}
+```

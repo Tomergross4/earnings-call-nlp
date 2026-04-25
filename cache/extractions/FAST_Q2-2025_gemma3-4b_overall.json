@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.3,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record revenue exceeding $2 billion for the first time",
+    "8.6% increase in sales, highest yearly growth since early 2023",
+    "140-170 basis points of price increases",
+    "11.2% growth in contract signings (compared to 4% in 2022/23)",
+    "30% year-over-year increase in non-manufacturing sites revenue ($50,000+)"
+  ],
+  "risks": [
+    "Sluggish market conditions",
+    "Decline in number of accounts under $5,000",
+    "Potential impact of tariffs on FMI technology adoption",
+    "Expected slowdown in FMI technology signings",
+    "Uncertainty regarding future macroeconomic conditions"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "sales growth",
+    "contract wins",
+    "supply chain optimization",
+    "digital transformation",
+    "market conditions"
+  ]
+}

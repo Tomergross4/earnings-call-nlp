@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "10% dividend increase",
+    "2,031 Onsite signings",
+    "100 MAU signings per day",
+    "Strong incremental margin outlook for 2025",
+    "Customer site growth in the $10,000+ segment"
+  ],
+  "risks": [
+    "December sales collapse (-9% to -12%)",
+    "35% of facilities experiencing >75% activity drop in 2024",
+    "17% shutdown rate in the week after Christmas",
+    "Weakness in e-commerce growth (28%)",
+    "Customer site performance in the <$5,000 segment lagging"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "customer_segmentation",
+    "e_commerce",
+    "onsite_growth",
+    "macroeconomic_impact",
+    "cost_management"
+  ]
+}

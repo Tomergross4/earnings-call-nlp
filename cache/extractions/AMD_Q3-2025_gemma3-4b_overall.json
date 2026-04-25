@@ -1,0 +1,25 @@
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record revenue ($9.2 billion)",
+    "36% year-over-year revenue growth",
+    "Record profitability (31% net income)",
+    "Strong demand across data center, server, and PC businesses",
+    "Significant growth in data center AI business"
+  ],
+  "risks": [
+    "Forward-looking statements involve risks and uncertainties",
+    "Potential for delays in product launches (Venice processors)",
+    "Competition in the CPU and GPU markets",
+    "Macroeconomic uncertainties"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data_center",
+    "server",
+    "pc",
+    "revenue_growth"
+  ]
+}

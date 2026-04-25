@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.3,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "9.5% growth in Innovative Medicine operational sales (excluding COVID-19 vaccine)",
+    "9.1% adjusted operational sales growth",
+    "Positive Phase III readouts for CARVYKTI, DARZALEX, RYBREVANT, and TREMFYA",
+    "FDA breakthrough designation for TAR-200",
+    "Ambrx acquisition to strengthen oncology pipeline"
+  ],
+  "risks": [
+    "Forward-looking statements subject to risks and uncertainties",
+    "Reliance on clinical trial outcomes",
+    "Competition in key markets",
+    "Potential delays in product approvals",
+    "Dependence on strategic partnerships"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "innovation",
+    "multiple myeloma",
+    "oncology",
+    "clinical trials",
+    "pipeline"
+  ]
+}

@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record EPS growth (27%)",
+    "Significant revenue increases (60% firm-wide, 18% GBM)",
+    "#1 M&A advisory position",
+    "Record FICC and equity financing revenues ($11.4 billion)",
+    "Improved risk profile and resilience"
+  ],
+  "risks": [
+    "Macroeconomic uncertainty",
+    "Potential slowdown in M&A activity",
+    "Regulatory changes",
+    "Competition in asset management",
+    "Transition of Apple Card portfolio (potential short-term impact)"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "growth",
+    "M&A",
+    "capital markets",
+    "asset management",
+    "AI"
+  ]
+}
+```

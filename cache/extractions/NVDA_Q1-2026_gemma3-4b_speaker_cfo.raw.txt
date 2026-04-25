@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.75,
+  "rationale": "While reporting strong revenue growth and new product launches, the CFO highlighted significant challenges related to export controls impacting China sales and a substantial inventory write-down, indicating a bearish outlook."
+}
+```

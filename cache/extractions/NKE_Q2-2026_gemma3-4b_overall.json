@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "North America wholesale growth (24%)",
+    "Strong Black Friday performance on NIKE.com",
+    "Running business showing double-digit growth",
+    "Inventory levels returning to healthy positions in North America and EMEA",
+    "Progress in repositioning NIKE Digital"
+  ],
+  "risks": [
+    "Significant impact from U.S. tariffs (320 basis points)",
+    "Headwinds from Classics franchise decline ($550 million)",
+    "Challenges in Greater China and Converse",
+    "Inventory obsolescence in Greater China",
+    "Near-term margin pressures due to Win Now actions"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "china",
+    "pricing",
+    "margins",
+    "inventory",
+    "wholesale"
+  ]
+}

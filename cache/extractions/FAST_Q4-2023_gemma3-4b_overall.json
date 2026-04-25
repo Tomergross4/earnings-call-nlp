@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "Record operating cash flow ($1.43B)",
+    "EPS growth of 8.5% ($0.46)",
+    "FMI devices saw a nice job",
+    "Digital Footprint growth",
+    "Fifth dividend payout ($0.38)"
+  ],
+  "risks": [
+    "Sub-50 PMI for 14 consecutive months",
+    "Slow industrial production",
+    "Weak demand in warehousing and manufacturing",
+    "Low Onsite signings (58)",
+    "Challenges with older Onsite locations"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "macro",
+    "industrial",
+    "supply chain",
+    "pricing",
+    "capex"
+  ]
+}

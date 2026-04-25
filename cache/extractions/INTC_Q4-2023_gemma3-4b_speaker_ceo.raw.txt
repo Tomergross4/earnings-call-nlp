@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.8,
+  "rationale": "The CEO highlights significant progress across multiple fronts – IDM 2.0 transformation, IFS foundry, AI adoption, and expanding manufacturing footprint – with strong revenue growth, EPS upside, and ambitious future plans, indicating a highly positive outlook."
+}
+```

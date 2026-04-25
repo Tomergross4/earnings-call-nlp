@@ -1,0 +1,3 @@
+```json
+{"sentiment": -0.6, "rationale": "The analyst expresses concerns about declining seasonality, customer competition, margin volatility, and the size of Intel's foundry business, indicating a bearish outlook."}
+```

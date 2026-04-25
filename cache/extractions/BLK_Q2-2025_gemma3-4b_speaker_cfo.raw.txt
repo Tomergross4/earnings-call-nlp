@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CFO highlights strong financial performance across multiple metrics – revenue, earnings, AUM, and inflows – coupled with strategic acquisitions and investments, indicating a very bullish outlook."
+}
+```

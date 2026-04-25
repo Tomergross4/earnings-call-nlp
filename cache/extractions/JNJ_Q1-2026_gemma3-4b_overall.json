@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Raised full-year guidance",
+    "6.4% operational sales growth",
+    "Multiple myeloma portfolio growth (DARZALEX, CARVYKTI, TECVAYLI)",
+    "Approval of ICOTYDE for plaque psoriasis",
+    "Strong performance across key MedTech areas (cardiovascular, surgery, vision)"
+  ],
+  "risks": [
+    "STELARA headwind (920 basis points)",
+    "Biosimilar competition impacting STELARA",
+    "Currency translation headwinds",
+    "Increased investment in new launches",
+    "Competitive pressures in certain markets"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "innovation",
+    "oncology",
+    "immune_therapy",
+    "medtech",
+    "growth"
+  ]
+}

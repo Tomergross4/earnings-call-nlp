@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.8,
+  "rationale": "The CEO expresses optimism about the separation, highlighting increased value for shareholders, significant operational improvements, and continued strategic initiatives, alongside positive Q2 results."
+}
+```

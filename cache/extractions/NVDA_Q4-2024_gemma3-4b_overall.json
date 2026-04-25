@@ -1,0 +1,24 @@
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record Data Center revenue (up 409% YoY)",
+    "Strong demand for Hopper architecture",
+    "Significant adoption of AI across automotive, healthcare, and financial services",
+    "New GeForce RTX 40 Super Series GPUs launched with AI capabilities",
+    "Expansion of NVIDIA Avatar Cloud Engine microservices"
+  ],
+  "risks": [
+    "U.S. export control regulations impacting China revenue",
+    "Supply constraints on H200 and future products",
+    "Macroeconomic uncertainty"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data_center",
+    "gaming",
+    "china",
+    "generative_ai"
+  ]
+}

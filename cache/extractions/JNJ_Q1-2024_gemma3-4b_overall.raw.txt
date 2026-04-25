@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.65,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Strong Q1 sales growth (21.4B)",
+    "Increased net earnings ($5.4B)",
+    "DARZALEX growth (21%)",
+    "TECvayli launch success",
+    "CARVYKTI FDA approval"
+  ],
+  "risks": [
+    "Competitive pressures on IMBRUVICA",
+    "Unfavorable patient mix impacting several products",
+    "Weather-related softness in U.S. trauma",
+    "Blink divestiture impact",
+    "Potential for continued XARELTO patient mix decline"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "oncology",
+    "cardiovascular",
+    "innovation",
+    "growth",
+    "regulatory"
+  ]
+}
+```

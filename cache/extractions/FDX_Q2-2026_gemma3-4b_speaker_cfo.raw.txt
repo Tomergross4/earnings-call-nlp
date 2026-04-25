@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.6,
+  "rationale": "The CFO highlights positive financial results (EPS growth, margin expansion, operating income growth) and strategic initiatives (stock repurchase, yield management), while also acknowledging headwinds and potential challenges (trade policy, LTL trends, MD-11 grounding). The overall tone is cautiously optimistic, leaning slightly bullish due to the strong performance and revised outlook."
+}
+```

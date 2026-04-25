@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.2,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Net income increased to $21.3 billion",
+    "Diluted earnings per share grew 17%",
+    "Fee-based revenue up 5%",
+    "Credit card accounts up 21%",
+    "Auto loan balances up 19%"
+  ],
+  "risks": [
+    "Ongoing monitoring of loan portfolios for weakness",
+    "Macroeconomic uncertainties",
+    "Regulatory environment",
+    "Trading assets have lower margins",
+    "Reliance on external financing partners (Overland Advantage)"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "growth",
+    "credit",
+    "auto",
+    "capital management",
+    "M&A"
+  ]
+}

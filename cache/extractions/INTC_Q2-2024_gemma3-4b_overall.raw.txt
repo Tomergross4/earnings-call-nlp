@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": -0.75,
+  "sentiment_bucket": "very_bearish",
+  "wins": [
+    "AIPC volume doubled sequentially",
+    "Lunar Lake launched ahead of schedule",
+    "Clearwater Forest achieved power-on",
+    "Gaudi 3 expected to deliver 2x performance per dollar",
+    "Intel 18A development on track"
+  ],
+  "risks": [
+    "Unexpected timing of export control restrictions",
+    "Lower-than-expected Q2 profitability",
+    "Increased costs associated with AIPC ramp and wafer transitions",
+    "Cyclical business headwinds (NEX, Altera, Mobileye)",
+    "Dividend suspension"
+  ],
+  "guidance": "lowered",
+  "themes": [
+    "ai",
+    "cpu",
+    "foundry",
+    "margins",
+    "cost_reduction"
+  ]
+}
+```

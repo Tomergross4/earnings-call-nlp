@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.8,
+  "rationale": "The CEO expresses optimism about the firm's progress, highlighting revenue growth, positive operating leverage, and strategic investments. While acknowledging challenges, the overall tone is positive and focused on momentum and achieving targets."
+}
+```

@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO highlights substantial revenue growth (44%, 9%, 42%), record returns to shareholders ($22 billion), and significant increases in key revenue drivers like AI (220%) and networking (45%). The forward-looking guidance for Q1 and the next 3 years is overwhelmingly positive, indicating a strong and accelerating growth trajectory."
+}
+```

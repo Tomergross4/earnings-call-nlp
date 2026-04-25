@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.2,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Strong net income of $13 billion and EPS of $4.63",
+    "7% year-on-year revenue growth",
+    "18% ROTCE",
+    "Full year net income of $57.5 billion and EPS of $20.18",
+    "Record client asset net inflows of $553 billion for the full year"
+  ],
+  "risks": [
+    "Standardized CET1 ratio down 30 basis points",
+    "Elevated standardized RWA driven by lending growth",
+    "IB fees down 5% year-on-year",
+    "Potential risks associated with non-bank financial institution lending",
+    "Competition in the investment banking and asset management spaces"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "revenue",
+    "lending",
+    "rates",
+    "investment",
+    "risk"
+  ]
+}

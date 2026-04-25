@@ -1,0 +1,3 @@
+```json
+{"sentiment": 0.9, "rationale": "The CEO expresses extreme confidence in the company's results, repeatedly emphasizing their exceptional performance and dismissing analyst criticism, indicating a very bullish outlook."}
+```

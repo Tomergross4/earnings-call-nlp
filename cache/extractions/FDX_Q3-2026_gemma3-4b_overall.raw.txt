@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Strong Q3 results driven by peak season performance",
+    "8% year-over-year revenue growth",
+    "7% increase in adjusted operating income",
+    "Six consecutive quarters of margin expansion",
+    "Raised FY '26 adjusted earnings outlook to $19.30 - $20.10"
+  ],
+  "risks": [
+    "Pressure on FedEx Freight results due to LTL industry trends",
+    "Increased separation-related expenses",
+    "Dynamic global trade policy changes impacting international operations",
+    "Challenging LTL demand environment",
+    "MD-11 fleet grounding"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "volume",
+    "yield",
+    "network_transformation",
+    "international",
+    "pricing"
+  ]
+}
+```

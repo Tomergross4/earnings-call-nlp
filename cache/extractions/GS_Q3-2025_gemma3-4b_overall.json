@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record M&A advisory volume ($1 trillion year-to-date)",
+    "Exclusive advisory role on the EA sale ($55 billion)",
+    "Strong performance across FICC and Equities businesses (7 consecutive quarters)",
+    "Record Asset Under Supervision ($3.5 trillion)",
+    "Record alternative fundraising ($100 billion target)"
+  ],
+  "risks": [
+    "Potential market cycle divergence after tech booms",
+    "Investor exuberance and AI-driven capital formation",
+    "Near-term policy considerations",
+    "Reliance on sponsor activity",
+    "Macroeconomic uncertainty"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "m&a",
+    "markets",
+    "wealth management",
+    "technology"
+  ]
+}

@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Strong revenue growth across multiple business segments (CCB, CIB, AWM)",
+    "Record asset & wealth management revenue and inflows",
+    "Robust pipeline and upbeat client sentiment in CIB",
+    "#1 position in retail deposit share for fifth consecutive year",
+    "Successful Sapphire refresh driving new account acquisitions"
+  ],
+  "risks": [
+    "Elevated wholesale charge-offs due to fraud",
+    "Potential softening labor market impacting consumer credit",
+    "Higher RWA driven by wholesale lending growth",
+    "CET1 ratio decline",
+    "Preliminary 2026 NII guidance subject to caveats"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "revenue",
+    "credit",
+    "deposits",
+    "market",
+    "capex"
+  ]
+}
+```

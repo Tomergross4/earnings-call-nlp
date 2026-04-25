@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO expresses strong optimism regarding the company's performance, highlighting record revenues, significant financial metrics (net income, EPS, ROTCE), strategic initiatives (transformation, share repurchase), and a clear path to achieving its 10-11% ROTCE target, indicating a very bullish outlook."
+}
+```

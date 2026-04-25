@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.75,
+  "rationale": "The text contains numerous negative financial results, including decreased earnings per share, declines in net earnings, and negative impacts from acquisitions and loss of exclusivity, indicating a bearish outlook."
+}
+```

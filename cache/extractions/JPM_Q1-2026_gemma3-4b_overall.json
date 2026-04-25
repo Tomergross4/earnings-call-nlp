@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.15,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Strong market revenue growth",
+    "High asset management and investment banking fees",
+    "Healthy client investment assets",
+    "Increased home lending originations",
+    "Positive consumer and small business resilience"
+  ],
+  "risks": [
+    "Increased expenses (compensation, brokerage, distribution)",
+    "Higher RWA driven by markets business",
+    "High G-SIB surcharge under Basel III proposal",
+    "Potential impact of Middle East developments on deal execution",
+    "Persistent miscalibration of U.S. surcharge"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "markets",
+    "banking",
+    "capital_regulation",
+    "risk",
+    "interest_rates"
+  ]
+}

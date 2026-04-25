@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.45,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Strong Q2 sales growth (6.6% overall)",
+    "Innovative Medicine sales up 7.8%",
+    "DARZALEX growth of 21.3%",
+    "CARVYKTI sales of $186 million",
+    "MedTech growth of 4.4%"
+  ],
+  "risks": [
+    "Cost of products sold margin deleveraged",
+    "MedTech growth below expectations",
+    "Biosimilar entry anticipated",
+    "Competitive pressures in various segments",
+    "Talc litigation settlement uncertainty"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "oncology",
+    "biosimilars",
+    "innovation",
+    "market_growth",
+    "talc_litigation"
+  ]
+}
+```

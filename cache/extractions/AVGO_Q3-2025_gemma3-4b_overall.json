@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record $16 billion revenue in Q3 2025",
+    "10.7 billion in Q3 adjusted EBITDA",
+    "110 billion in current backlog",
+    "AI semiconductor revenue up 63% year-on-year",
+    "XPU business accelerated to 65% of AI revenue"
+  ],
+  "risks": [
+    "Slow recovery in non-AI semiconductor business",
+    "Challenges scaling to clusters beyond 100,000 compute nodes",
+    "Network challenges impacting generative AI deployment",
+    "Potential for cyclical downturn in non-AI segment",
+    "Dependence on specific customer demand"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "semiconductors",
+    "networking",
+    "china",
+    "capex"
+  ]
+}

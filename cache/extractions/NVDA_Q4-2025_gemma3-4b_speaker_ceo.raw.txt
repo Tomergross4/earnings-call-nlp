@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO expresses strong enthusiasm regarding Blackwell, highlighting significant advancements in scaling, revenue generation, and future product development, indicating a very bullish outlook."
+}
+```

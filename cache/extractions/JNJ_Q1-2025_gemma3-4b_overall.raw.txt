@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.3,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Strong operational sales growth of 4.2%",
+    "Continued growth despite STELARA exclusivity loss",
+    "DARZALEX growth exceeding 20%",
+    "RYBREVANT plus LAZCLUZE extended indications and approvals",
+    "TREMFYA launch in Ulcerative Colitis"
+  ],
+  "risks": [
+    "STELARA exclusivity loss impacting sales",
+    "Part D redesign impacting sales",
+    "Biosimilar competition for Stelara",
+    "China headwinds",
+    "Competition in electrophysiology and PFA"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "innovation",
+    "oncology",
+    "immune_therapy",
+    "cardiovascular",
+    "R&D"
+  ]
+}
+```

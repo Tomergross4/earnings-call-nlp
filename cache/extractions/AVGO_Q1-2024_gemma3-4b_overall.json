@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Strong AI revenue growth (quadrupled year-over-year)",
+    "Networking revenue growth driven by AI accelerators",
+    "Infrastructure software revenue growth (153% year-over-year)",
+    "VMware Cloud Foundation (VCF) adoption driving growth",
+    "Reiteration of fiscal 2024 guidance with increased AI expectations"
+  ],
+  "risks": [
+    "Cyclical slowdown in enterprise and telco networking",
+    "Weakening broadband spending",
+    "Decline in server storage connectivity revenue",
+    "North American customer engagement challenges (wireless)",
+    "Mid-teens decline in broadband revenue"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "networking",
+    "software",
+    "broadband",
+    "financial results"
+  ]
+}

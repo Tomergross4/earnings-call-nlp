@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.8,
+  "rationale": "The CEO highlights significant revenue growth in data center sales, particularly driven by Instinct AI accelerators and MI300 GPUs, alongside strong performance in client and gaming segments, indicating a very bullish outlook."
+}
+```

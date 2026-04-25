@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Successful holiday season delivery",
+    "Decision to separate FedEx Freight into a standalone public company",
+    "25% increase in operating profit for FedEx Freight over the past 5 years",
+    "Achieved $540 million in DRIVE savings in Q2",
+    "Continued strong performance of FedEx Express"
+  ],
+  "risks": [
+    "Weak industrial economy impacting B2B volumes",
+    "U.S. Postal Service contract expiration leading to network adjustments",
+    "Market pressure and difficult year-over-year comparisons affecting Freight segment",
+    "Soft market conditions and declining manufacturing PMI",
+    "Competition from lower-priced services"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "separation",
+    "growth",
+    "efficiency",
+    "technology",
+    "peak season"
+  ]
+}
+```

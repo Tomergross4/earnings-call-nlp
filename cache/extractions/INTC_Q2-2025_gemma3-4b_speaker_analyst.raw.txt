@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.6,
+  "rationale": "The analyst expresses significant concerns regarding Intel's foundry strategy, execution risks, and potential delays, coupled with questions about profitability and competitive pressures, indicating a bearish outlook."
+}
+```

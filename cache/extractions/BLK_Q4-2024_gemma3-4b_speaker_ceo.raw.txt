@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO expresses overwhelmingly positive sentiments regarding BlackRock's performance, growth trajectory, strategic acquisitions, and future opportunities, using phrases like 'record inflows,' 'exceptional performance,' 'outsized growth,' and 'well positioned.'"
+}
+```

@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.1,
+  "rationale": "The CFO presented mixed results with strong revenue growth and improved profitability in some segments, but also highlighted significant expense increases driven by the FDIC assessment and wage inflation, alongside cautious guidance for 2024 NII."
+}
+```

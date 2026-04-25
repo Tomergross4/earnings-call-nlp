@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.15,
+  "rationale": "While the CFO highlighted revenue growth from noninterest income and positive trends in credit card loans, the overall tone is cautious due to declining loan balances, persistent deposit challenges, and continued guidance for lower net interest income, suggesting ongoing uncertainty."
+}
+```

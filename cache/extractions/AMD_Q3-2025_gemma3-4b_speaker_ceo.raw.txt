@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.95,
+  "rationale": "The CEO's statements are overwhelmingly positive, highlighting record revenue, profitability, significant growth rates, and strong customer demand across multiple segments, particularly in data center AI and cloud computing, indicating a very bullish outlook."
+}
+```

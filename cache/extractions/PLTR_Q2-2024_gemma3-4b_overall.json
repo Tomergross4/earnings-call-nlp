@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Strong U.S. commercial revenue growth (30% YOY, 10% sequential)",
+    "Significant TCV bookings ($1 billion)",
+    "Increased customer count (83% YOY)",
+    "Multiple large contract wins (Tampa General, Panasonic, AARP, Eaton, Kinder Morgan)",
+    "Secured DoD contract for AI operating system ($153M initial order)"
+  ],
+  "risks": [
+    "Reliance on strategic commercial contracts (declining revenue)",
+    "Macroeconomic uncertainty",
+    "Competition in the AI market",
+    "Potential delays in customer deployments",
+    "Dependence on key customer relationships"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "enterprise",
+    "production",
+    "government",
+    "industrial_reindustrialization"
+  ]
+}

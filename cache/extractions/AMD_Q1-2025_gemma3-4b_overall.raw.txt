@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Strong data center and AI momentum",
+    "Significant revenue growth (36% YoY)",
+    "Expanded gross margin",
+    "Increased net income",
+    "Strong EPYC adoption in enterprise and cloud"
+  ],
+  "risks": [
+    "Evolving tariffs and regulatory environment",
+    "Macroeconomic uncertainty",
+    "Export controls on Instinct MI308X shipments to China",
+    "Competition in the GPU market",
+    "Potential delays in MI400 Series launch"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data_center",
+    "epyc",
+    "ryzen",
+    "gpu"
+  ]
+}
+```

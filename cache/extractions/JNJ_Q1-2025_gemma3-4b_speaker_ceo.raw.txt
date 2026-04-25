@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO expresses strong confidence in the company's performance, highlighting significant growth figures, new product approvals, substantial investment plans, and strategic partnerships. They repeatedly emphasize resilience and a positive outlook for the future, indicating a very bullish sentiment."
+}
+```

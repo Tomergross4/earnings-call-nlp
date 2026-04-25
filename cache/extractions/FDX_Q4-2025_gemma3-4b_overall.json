@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.3,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Solid FY '25 performance with operating income growth",
+    "Achievement of $2.2 billion drive structural cost reduction target",
+    "Network 2.0 optimization completed in Canada",
+    "U.S. domestic volume growth accelerating in late April and May",
+    "Improved Freight profitability with 20.8% operating margin in Q4"
+  ],
+  "risks": [
+    "U.S. postal service contract expiration",
+    "Tariff-related impact on China to U.S. trade lane",
+    "Volatile global demand environment",
+    "Pressure on higher-margin B2B volumes",
+    "European workforce reduction plan"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "supply chain",
+    "trade",
+    "network optimization",
+    "cost reduction",
+    "geopolitics"
+  ]
+}

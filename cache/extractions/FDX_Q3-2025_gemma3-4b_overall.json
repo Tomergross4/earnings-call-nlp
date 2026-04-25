@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Significant DRIVE savings achieved ($600M in Q3)",
+    "12% adjusted operating income growth",
+    "Network 2.0 conversions progressing (5 stations optimized)",
+    "Tricolor strategy driving airfreight growth (9% payload increase)",
+    "Successful transition away from USPS contract"
+  ],
+  "risks": [
+    "Weak industrial economy impacting B2B volumes",
+    "Postal Service contract expiration headwinds ($180M)",
+    "Severe weather events impacting operations",
+    "Uncertain demand environment and inflationary pressures",
+    "Freight performance remains challenged"
+  ],
+  "guidance": "lowered",
+  "themes": [
+    "volume",
+    "pricing",
+    "network",
+    "drive",
+    "inflation"
+  ]
+}

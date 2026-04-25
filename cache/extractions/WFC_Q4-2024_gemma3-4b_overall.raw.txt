@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.3,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Strong net income of $5.1 billion",
+    "11% increase in diluted earnings per share year-over-year",
+    "15% growth in fee-based revenue",
+    "Closed six consent orders",
+    "Significant progress in credit card platform improvements"
+  ],
+  "risks": [
+    "Weak loan demand",
+    "Commercial real estate office portfolio losses",
+    "Deposit migration to higher-yielding products",
+    "Market conditions can change",
+    "Ongoing consent order work"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "credit",
+    "deposit costs",
+    "real estate",
+    "strategy",
+    "macro"
+  ]
+}
+```

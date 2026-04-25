@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record $221 billion net inflows",
+    "350 basis points margin expansion",
+    "5% organic base fee growth (highest in 3 years)",
+    "Aladdin ACV growth at 15%",
+    "Successful GIP acquisition and integration"
+  ],
+  "risks": [
+    "Potential for fluctuating market conditions",
+    "Discrete tax expense impact",
+    "Technology services revenue decline (temporary)",
+    "Increased incentive compensation",
+    "Regulatory approvals needed for Preqin acquisition"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "growth",
+    "private_markets",
+    "technology",
+    "capital_markets",
+    "client_sentiment"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "PC inventory normalization in Intel Products",
+    "Incremental operating efficiencies in Intel Foundry",
+    "Solid upside to gross margins in Intel Foundry",
+    "Launch of enterprise AI CPUs with Intel vPro",
+    "Positive response from x86 ecosystem advisory group"
+  ],
+  "risks": [
+    "Continued PC inventory normalization",
+    "Competition in AI PC category",
+    "Unmet participation in cloud-based AI data center market",
+    "Temporary process challenges with Intel 18A",
+    "High operating losses in Intel Foundry"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "ai",
+    "pc",
+    "foundry",
+    "x86",
+    "macro"
+  ]
+}

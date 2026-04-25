@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.15,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "#1 in retail deposit share (CCB)",
+    "Notably up IB fees and Markets revenue (CIB)",
+    "Record quarterly revenues and long-term flows (AWM)",
+    "Revenue up 6% year-on-year ($43.3B)",
+    "Strong performance in Equities (Markets)"
+  ],
+  "risks": [
+    "Deposit margin compression",
+    "Slowdown in customer yield-seeking activity",
+    "Card outstandings up 11%",
+    "Net charge-offs up $590 million (Card)",
+    "M&A, regulatory environment, and geopolitical situation (CIB)"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "banking",
+    "markets",
+    "deposit_rates",
+    "credit_risk",
+    "macro"
+  ]
+}
+```

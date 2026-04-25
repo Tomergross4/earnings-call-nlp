@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.65,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record AUM of $11.6 trillion",
+    "6% organic base fee growth",
+    "140 billion in net inflows (excluding index outflows)",
+    "100 basis points margin expansion",
+    "Strong ETF inflows"
+  ],
+  "risks": [
+    "Episodic institutional index equity outflows",
+    "Market volatility and uncertainty",
+    "Geopolitical risks",
+    "High share count impacting EPS",
+    "Potential for lower base fees in Q2"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "growth",
+    "private markets",
+    "etfs",
+    "technology",
+    "macro"
+  ]
+}
+```

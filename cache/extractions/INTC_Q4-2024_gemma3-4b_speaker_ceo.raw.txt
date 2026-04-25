@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.75,
+  "rationale": "The CEO expresses concerns about competitive pressures, acknowledges a challenging turnaround, and highlights a multi-year roadmap with uncertain timelines, indicating a bearish outlook."
+}
+```

@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO expresses strong optimism regarding the bank's performance, highlighting record revenue, increased profitability, strategic investments, and a resilient business model despite macroeconomic uncertainty."
+}
+```

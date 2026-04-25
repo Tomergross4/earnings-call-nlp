@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.2,
+  "rationale": "The CFO highlights strong revenue growth across multiple segments (equities, FICC, AWM) and record profitability, alongside significant capital returns to shareholders, indicating a generally positive outlook despite acknowledging market volatility and potential asset price adjustments."
+}
+```

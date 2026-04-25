@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.75,
+  "rationale": "The CFO expressed concerns about declining revenues, gross margins, and significant headwinds, coupled with the impact of new tariffs and ongoing inventory issues, indicating a bearish outlook."
+}
+```

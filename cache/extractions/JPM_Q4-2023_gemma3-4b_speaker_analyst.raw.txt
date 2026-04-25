@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.75,
+  "rationale": "The analyst's questioning is highly critical and focused on potential weaknesses in JPMorgan's forecasts, particularly regarding NII, deposit trends, and the impact of regulatory changes and macroeconomic uncertainty, indicating a bearish outlook."
+}
+```

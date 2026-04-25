@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.45,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record AUM of $12.5 trillion",
+    "7% organic base fee growth",
+    "Over $650 billion of net inflows in 12 months",
+    "GIP V exceeded $25 billion target",
+    "26% growth in technology services revenue"
+  ],
+  "risks": [
+    "Low fee institutional index redemptions ($48 billion)",
+    "Performance fees decreased year-over-year",
+    "Higher operating expenses (compensation, G&A)",
+    "Currency movements impacting AUM",
+    "Potential for discrete tax items"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "private markets",
+    "technology",
+    "growth",
+    "AUM",
+    "capital markets"
+  ]
+}
+```

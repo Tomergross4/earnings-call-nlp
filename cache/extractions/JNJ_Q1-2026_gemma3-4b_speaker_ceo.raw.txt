@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO expresses overwhelmingly positive sentiment, highlighting strong financial performance, significant product launches, a robust pipeline, and ambitious growth targets (including $100B revenue and double-digit growth by the end of the decade). The language is consistently optimistic and confident."
+}
+```

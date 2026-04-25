@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Solid Q4 results exceeding expectations",
+    "Successful execution of IDM 2.0 transformation",
+    "World's first high-volume manufacturer of logic devices using EUV",
+    "Significant progress in IFS foundry strategy",
+    "Strong momentum in advanced packaging business"
+  ],
+  "risks": [
+    "Mobileye, PSG and business exits impacting revenue",
+    "Lower Q1 guide due to headwinds",
+    "Industry-wide cyclical correction for FPGAs (PSG)",
+    "Inventory correction impacting Mobileye",
+    "Uncertainty surrounding macroeconomic conditions"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "ai",
+    "foundry",
+    "innovation",
+    "supply_chain",
+    "pc"
+  ]
+}

@@ -1,0 +1,27 @@
+```json
+{
+  "overall_sentiment": 0.65,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record revenue of $46.7 billion",
+    "56% year-over-year growth in data center revenue",
+    "Blackwell platform reaching record levels",
+    "GB300 production shipments underway",
+    "Significant growth in gaming revenue (14% sequential, 49% YoY)"
+  ],
+  "risks": [
+    "Geopolitical issues impacting H20 shipments to China",
+    "Uncertainty regarding US government regulations on H20 sales",
+    "Competition in AI infrastructure market",
+    "Potential for increased operating expenses"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data center",
+    "gaming",
+    "china",
+    "robotics"
+  ]
+}
+```

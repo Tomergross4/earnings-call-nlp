@@ -1,0 +1,1 @@
+{"sentiment": 0.9, "rationale": "The analyst repeatedly references high growth rates (60%, 30 billion+), specific numbers ($5.8 billion), and confirms projections for fiscal '26, indicating a very bullish outlook on Broadcom's AI business."}

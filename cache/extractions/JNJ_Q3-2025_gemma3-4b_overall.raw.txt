@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Strong Q3 sales growth (5.4%)",
+    "Double-digit growth across 11 brands",
+    "CARVYKTI launch exceeding expectations (81.4% growth)",
+    "TREMFYA sales growth of 40%",
+    "Successful launch of INLEXZO"
+  ],
+  "risks": [
+    "STELARA sales decline due to biosimilar competition",
+    "China VBP impacting MedTech portfolio",
+    "Macroeconomic uncertainty",
+    "Dependence on key products (DARZALEX, CARVYKTI)",
+    "Orthopaedics separation complexity"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "innovation",
+    "growth",
+    "multiple myeloma",
+    "immunology",
+    "medtech"
+  ]
+}
+```

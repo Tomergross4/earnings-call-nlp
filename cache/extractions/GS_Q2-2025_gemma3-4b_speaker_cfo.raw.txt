@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.6,
+  "rationale": "The CFO highlights strong revenue growth across multiple segments (equities, FICC, AWM), record performance in M&A advisory, and significant inflows into alternative assets, indicating a generally positive and growing business environment."
+}
+```

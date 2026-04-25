@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO repeatedly highlights record revenue growth, significant increases in year-over-year performance across multiple segments (AI semiconductors, infrastructure software, and networking), and strong customer demand, indicating a highly bullish outlook."
+}
+```

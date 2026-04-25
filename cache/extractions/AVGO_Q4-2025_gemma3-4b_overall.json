@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.65,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record revenue growth (Q4 and FY25)",
+    "Strong AI semiconductor revenue growth (65% YoY)",
+    "Record EBITDA",
+    "Significant backlog in AI (>$73B)",
+    "Increased dividend payout"
+  ],
+  "risks": [
+    "Wireless seasonality impacting non-AI semiconductor revenue",
+    "Potential slowdown in enterprise spending",
+    "Competition from merchant GPUs",
+    "Reliance on specific customer orders (Anthropic, Google, Apple)",
+    "Increased global minimum tax impacting profitability"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "semiconductors",
+    "china",
+    "pricing",
+    "capex"
+  ]
+}

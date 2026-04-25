@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO expresses overwhelmingly positive sentiment regarding Broadcom's revenue growth, backlog, and future prospects in the AI market, highlighting record orders, accelerating growth rates, and significant customer demand."
+}
+```

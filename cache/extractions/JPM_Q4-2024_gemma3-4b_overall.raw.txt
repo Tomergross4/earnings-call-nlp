@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Record number of first-time investors in CCB",
+    "Record revenue in CIB Markets, Payments, and Securities Services",
+    "Record long-term net inflows of $234 billion in AWM",
+    "IB fees up 49% year-on-year, #1 wallet share",
+    "Significant increase in equity underwriting fees"
+  ],
+  "risks": [
+    "Deposit margin compression",
+    "Lower rates impacting NII",
+    "Card outstandings up 11%",
+    "Credit costs up $428 million year-on-year (Card)",
+    "Potential for NII trough in mid-2025"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "banking",
+    "investment_banking",
+    "markets",
+    "credit",
+    "capital_markets"
+  ]
+}
+```

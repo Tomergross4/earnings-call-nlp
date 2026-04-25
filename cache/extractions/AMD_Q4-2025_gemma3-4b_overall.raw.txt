@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.65,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record revenue and net income",
+    "Significant server and PC processor share gains",
+    "Rapid scaling of Data Center AI business",
+    "Strong demand across data center, PC, gaming, and embedded markets",
+    "MI350 Series GPU deployments driving data center revenue"
+  ],
+  "risks": [
+    "Forward-looking statements involve risks and uncertainties",
+    "Potential for semi-custom SoC revenue decline",
+    "Competition in AI market",
+    "Dependence on hyperscaler demand",
+    "Macroeconomic uncertainties"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data_center",
+    "pc",
+    "gaming",
+    "cloud"
+  ]
+}
+```

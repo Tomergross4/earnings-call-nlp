@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "Break above 50 PMI in March",
+    "Expanded customer expo to 50% larger attendance",
+    "Strong FMI device signing rate (105 devices/day)",
+    "E-commerce growth approaching 60% sales",
+    "Conservative balance sheet with declining debt"
+  ],
+  "risks": [
+    "Sluggish demand and industrial production decline",
+    "Seasonally weak January and February",
+    "Good Friday holiday impact",
+    "Operating margin down 60 basis points",
+    "SG&A expense increase due to labor costs and event expansion"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "demand",
+    "industrial production",
+    "pricing",
+    "capex",
+    "macro"
+  ]
+}
+```

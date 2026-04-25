@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.65,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Double-digit sales growth (11.7%)",
+    "Consistent performance and share gains in a flat market",
+    "Strong contract signings and penetration in existing accounts",
+    "Successful fastener expansion initiative driving margin improvements",
+    "Continued momentum in digital sales (FMI and eBusiness)"
+  ],
+  "risks": [
+    "Sluggish industrial economy and PMI contraction",
+    "Tariff pressures and supply chain costs",
+    "Potential for extended holiday shutdowns",
+    "Customer mix dilution",
+    "Macroeconomic uncertainty regarding trade policy"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "growth",
+    "pricing",
+    "market_share",
+    "digital_transformation",
+    "supply_chain"
+  ]
+}

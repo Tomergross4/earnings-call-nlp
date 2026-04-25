@@ -1,0 +1,27 @@
+```json
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record revenues of $53.5 billion for the year",
+    "77% increase in EPS to $40.54",
+    "ROE improved by over 500 basis points to 12.7%",
+    "#1 M&A adviser in investment banking",
+    "Record $9.1 billion in FICC and Equities financing revenues"
+  ],
+  "risks": [
+    "Regulatory uncertainty and stress testing",
+    "Potential for cyclical downturns in banking and markets",
+    "Competition in wealth management",
+    "Macroeconomic headwinds"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "growth",
+    "markets",
+    "wealth management",
+    "innovation",
+    "regulation"
+  ]
+}
+```

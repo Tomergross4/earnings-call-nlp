@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.6,
+  "rationale": "The CFO highlights solid results, growth in key areas like non-interest income and wealth management, and strategic repositioning of the investment portfolio, indicating a generally positive outlook despite some challenges."
+}
+```

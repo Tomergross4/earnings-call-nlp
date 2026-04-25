@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Double-digit operating income growth",
+    "160 basis points margin expansion",
+    "Over $80 billion in net new assets",
+    "3% annualized organic base fee growth (highest in 3 years)",
+    "Record AUM of over $10.6 trillion"
+  ],
+  "risks": [
+    "Large insurance client fixed income redemption ($20 billion)",
+    "Institutional index net outflows ($35 billion)",
+    "Private market realizations ($4 billion)",
+    "Geopolitical events (Trump assassination attempt)",
+    "Low-fee index equity outflows"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "private markets",
+    "technology",
+    "growth",
+    "AUM",
+    "equity markets"
+  ]
+}
+```

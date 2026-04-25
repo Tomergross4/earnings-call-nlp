@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "3% year-over-year revenue growth",
+    "$200 million in transformation-related savings achieved",
+    "7% adjusted operating income growth",
+    "Strong value proposition driving customer relationships",
+    "Network 2.0 rollout progressing well"
+  ],
+  "risks": [
+    "Continued headwinds from the trade environment",
+    "U.S. Postal Service contract expiration",
+    "Pressure on FedEx Freight revenue",
+    "De minimis exemption elimination impacting China to U.S. volume",
+    "Industrial economic weakness"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "trade",
+    "network",
+    "digital",
+    "growth",
+    "international"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record revenue, operating income, and free cash flow",
+    "Significant data center revenue growth (73% YoY, $68B total)",
+    "Blackwell architecture demand strengthening",
+    "Networking business exceeding $31B (10x growth since Mellanox acquisition)",
+    "Partnerships with OpenAI, Meta, Anthropic, and Groq"
+  ],
+  "risks": [
+    "Inventory constraints impacting Gaming",
+    "Competition from Chinese AI companies",
+    "Potential restrictions on H200 sales to China",
+    "Macroeconomic uncertainty and potential slowdown in cloud spending",
+    "Dependence on key customer relationships"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data center",
+    "china",
+    "pricing",
+    "capex"
+  ]
+}

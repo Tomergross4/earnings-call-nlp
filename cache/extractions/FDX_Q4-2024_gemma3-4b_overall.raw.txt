@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Full year earnings towards the higher end of guidance",
+    "Lowered capital intensity, achieving FY '25 target early",
+    "Nearly $4 billion returned to stockholders",
+    "Ground operating income at company history highs",
+    "Significant DRIVE cost savings achieved"
+  ],
+  "risks": [
+    "Decline in revenue compared to initial growth expectations",
+    "Pressure on Express operating margin",
+    "Challenges in the global air cargo market",
+    "Red Sea disruptions impacting freight",
+    "Competitive pricing environment"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "transformation",
+    "cost-cutting",
+    "network optimization",
+    "supply chain",
+    "volume stabilization"
+  ]
+}
+```

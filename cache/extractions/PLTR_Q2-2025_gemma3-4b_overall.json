@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record $1 billion revenue quarter",
+    "Rule of 40 score reaches 94%",
+    "Highest TCV and ACV ever ($2.3B and $684M)",
+    "157 deals worth $1M+ with significant deal sizes",
+    "U.S. commercial business growth significantly accelerated"
+  ],
+  "risks": [
+    "Forward-looking statements subject to risks and uncertainties",
+    "Reliance on AI performance, potential for errors",
+    "Competition in the AI market",
+    "Macroeconomic uncertainties",
+    "Potential for delays in government contracts"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "growth",
+    "government",
+    "commercial",
+    "innovation"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record Q3 revenue ($35.1B)",
+    "Significant Hopper demand and sales (H200)",
+    "Blackwell GPU shipments to major partners (OpenAI)",
+    "Strong growth in Data Center and Consumer Internet revenue",
+    "Blackwell performance breakthroughs (5x inference throughput)"
+  ],
+  "risks": [
+    "Supply constraints impacting Gaming revenue",
+    "Competition in China market",
+    "Potential margin pressure due to Blackwell ramp",
+    "Dependence on AI model scaling trends",
+    "Export controls impacting data center revenue"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "china",
+    "blackwell",
+    "inference",
+    "data_center"
+  ]
+}

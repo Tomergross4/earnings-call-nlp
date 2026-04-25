@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.95,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record revenue growth (70% YoY)",
+    "Historic TCV of $4.3 billion",
+    "New Rule of 40 score of 127%",
+    "Significant growth in U.S. government business (66% YoY)",
+    "ShipOS implementation driving industrial production gains"
+  ],
+  "risks": [
+    "Forward-looking statements subject to risks and uncertainties",
+    "Commoditization of cognition driven by AI",
+    "Reliance on large customer contracts",
+    "Competition in the AI market",
+    "Potential macroeconomic headwinds"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "growth",
+    "government",
+    "supply_chain",
+    "innovation"
+  ]
+}

@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Double-digit revenue, operating income, and EPS growth",
+    "100 basis points margin expansion",
+    "$130 billion net inflows",
+    "8% organic base fee growth (7 consecutive quarters at or above 5%)",
+    "Record iShares first quarter net inflows ($132 billion)"
+  ],
+  "risks": [
+    "Volatile market environment with heightened sensitivity to economic data",
+    "Geopolitical uncertainty and AI impact",
+    "Institutional index outflows",
+    "Employee compensation increases",
+    "Cash management outflows"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "growth",
+    "markets",
+    "private markets",
+    "technology",
+    "client engagement"
+  ]
+}
+```

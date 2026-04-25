@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.75,
+  "rationale": "The analyst expresses significant concern regarding Goldman's sustainability, highlighting declining pipelines, unusual revenue trends, and uncertainty around key initiatives like AI and private credit, indicating a bearish outlook."
+}
+```

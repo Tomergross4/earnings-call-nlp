@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record revenue and EBITDA",
+    "Strong AI semiconductor growth (106% YoY)",
+    "Custom AI XPU ramp progressing well",
+    "Secure supply chain for key components",
+    "Increased visibility in 2027 AI revenue outlook ($100B+)"
+  ],
+  "risks": [
+    "Potential competition from hyperscaler COT initiatives",
+    "Seasonal decline in wireless revenue",
+    "Reliance on constrained wafer supply",
+    "Macroeconomic uncertainties",
+    "Dependence on key customer relationships"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "semiconductors",
+    "growth",
+    "supply_chain",
+    "networking"
+  ]
+}

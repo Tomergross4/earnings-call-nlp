@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": -0.65,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "Strong holiday results in December",
+    "Momentum in training and running businesses",
+    "Reduced promotional days in North America and EMEA",
+    "New 24/7 apparel collection exceeding expectations",
+    "Successful Super Bowl and NBA All-Star activations"
+  ],
+  "risks": [
+    "Overall revenue decline (9%)",
+    "Currency-neutral revenue decline (7%)",
+    "Gross margin decline (330 bps)",
+    "Declines in Nike Sportswear and Jordan brand",
+    "Decline in NIKE Direct (10%)"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "sportswear",
+    "performance",
+    "marketplace",
+    "china",
+    "product portfolio"
+  ]
+}

@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.75,
+  "rationale": "The transcript reveals significant concerns about NII guidance, potential revenue declines, and uncertainty surrounding the future trajectory of the bank's performance, indicating a bearish sentiment."
+}
+```

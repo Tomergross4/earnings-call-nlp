@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.2,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Solid year-on-year growth in Global Banking & Markets and Asset & Wealth Management",
+    "Record Asset Under Supervision ($2.9 trillion)",
+    "Record Asset & Wealth Management revenues ($3.9 billion)",
+    "Significant Investment in Alternatives ($36 billion raised YTD)",
+    "Increased M&A activity and backlog"
+  ],
+  "risks": [
+    "Geopolitical instability",
+    "Sticky inflation",
+    "Federal Reserve stress capital buffer increase",
+    "Potential regulatory scrutiny regarding stress test results",
+    "Commercial Real Estate Markdowns"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "M&A",
+    "alternatives",
+    "inflation",
+    "AI",
+    "capital markets"
+  ]
+}

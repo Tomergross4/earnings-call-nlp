@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.2,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Solid first quarter results with 16% EPS growth",
+    "Fee-based revenue growth across many businesses",
+    "Expenses declining year-over-year due to efficiency initiatives",
+    "5 consent orders terminated",
+    "Commercial real estate office portfolio charge-offs decreased"
+  ],
+  "risks": [
+    "Revenue declined from a year ago due to lower net interest income",
+    "Potential economic volatility and uncertainty",
+    "Regulatory barriers to growth",
+    "Consumer credit portfolio showing increased losses",
+    "Deposit balances declined 1% from the fourth quarter"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "credit",
+    "regulation",
+    "macro",
+    "capital markets",
+    "consumer banking"
+  ]
+}

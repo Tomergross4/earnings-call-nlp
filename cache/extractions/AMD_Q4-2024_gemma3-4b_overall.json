@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record annual revenue",
+    "26% net income growth",
+    "More than doubled free cash flow",
+    "50% Data Center revenue contribution",
+    "Significant share gains in server and PC markets"
+  ],
+  "risks": [
+    "Gaming segment revenue decline",
+    "Embedded segment revenue decline",
+    "Semi-custom sales decline (consoles)",
+    "Macroeconomic uncertainties",
+    "Competition in AI hardware market"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data_center",
+    "server",
+    "pc",
+    "gaming"
+  ]
+}

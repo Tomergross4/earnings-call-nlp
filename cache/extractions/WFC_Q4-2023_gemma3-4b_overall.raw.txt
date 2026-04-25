@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "Increased CIB revenue (26%)",
+    "New credit card products driving higher consumer spend",
+    "Mobile app growth (1.6M new active customers)",
+    "Successful racial equity program",
+    "Investment in trading capabilities"
+  ],
+  "risks": [
+    "Expected decline in net interest income",
+    "Uncertainty regarding Fed rate actions",
+    "Modest credit deterioration",
+    "Consumer deposit decline",
+    "Sensitivity to U.S. economic health"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "interest_rates",
+    "credit",
+    "consumer_spending",
+    "banking",
+    "macro"
+  ]
+}
+```

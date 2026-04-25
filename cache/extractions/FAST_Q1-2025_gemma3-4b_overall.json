@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.2,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Record customer attendance at customer expo",
+    "Strong sequential sales growth (5% daily)",
+    "FMI device count growth (12.5%)",
+    "Digital footprint growth (61%)",
+    "Customer site data success (7%)"
+  ],
+  "risks": [
+    "Sluggish marketplace conditions",
+    "Weather impacting January sales",
+    "Tariff pressures on international sourcing",
+    "Underperforming e-commerce sales (<$2,000 customers)",
+    "Loss of Bob Kierlin"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "leadership",
+    "supply chain",
+    "e-commerce",
+    "marketplace",
+    "financial performance"
+  ]
+}

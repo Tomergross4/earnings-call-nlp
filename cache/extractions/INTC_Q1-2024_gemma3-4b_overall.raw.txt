@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Intel 18A customer acquisition (Microsoft, Aerospace & Defense)",
+    "Launch of Open Source AI project",
+    "Intel Developer Cloud adoption",
+    "CHIPS Act grant award ($45 billion)",
+    "Stabilization of NEX business"
+  ],
+  "risks": [
+    "Modestly weaker first-half trends",
+    "Supply constraints",
+    "Inventory headwinds impacting Mobileye, Altera, and 5G customers",
+    "Non-core revenue decline",
+    "Potential for continued foundry profitability challenges"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "ai",
+    "foundry",
+    "innovation",
+    "supply_chain",
+    "cost_management"
+  ]
+}
+```

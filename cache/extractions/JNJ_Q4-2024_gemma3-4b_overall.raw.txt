@@ -1,0 +1,27 @@
+```json
+{
+  "overall_sentiment": 0.3,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "SPRAVATO exceeding $1 billion in annual sales",
+    "RYBREVANT/LAZCLUZE showing significant survival improvement in lung cancer",
+    "FDA approval of SPRAVATO for treatment-resistant depression",
+    "27 approvals in major markets (including TREMFYA and RYBREVANT)",
+    "15 major products launched in MedTech"
+  ],
+  "risks": [
+    "U.S. biosimilar entries for STELARA",
+    "Impact of Part D redesign",
+    "Continued macroeconomic pressures in China",
+    "Potential headwinds from market competition"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "innovation",
+    "lung cancer",
+    "mental health",
+    "biosimilars",
+    "R&D investment"
+  ]
+}
+```

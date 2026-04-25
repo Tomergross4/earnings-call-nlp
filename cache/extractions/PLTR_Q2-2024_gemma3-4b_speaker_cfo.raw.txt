@@ -1,0 +1,3 @@
+```json
+{"sentiment": 0.9, "rationale": "The CFO presented overwhelmingly positive results, including accelerated revenue growth, increased profitability, a rising Rule of 40 score, and raised full-year guidance, indicating a very bullish outlook."}
+```

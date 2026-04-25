@@ -1,0 +1,68 @@
+# --- Secrets / credentials ---------------------------------------------------
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+service-account*.json
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.verify_env/
+venv/
+env/
+
+# --- Jupyter -----------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- IDE / OS ----------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Claude Code local config ------------------------------------------------
+.claude/settings.local.json
+
+# --- Model artifacts (large, regenerable) ------------------------------------
+cache/setfit_model/
+cache/finbert_finetuned/
+checkpoints/
+
+# --- Pre-polish / scratch ----------------------------------------------------
+outputs/writeup_prepolish.pdf
+# Equity-curve PNGs are graded artifacts (referenced in writeup §6) — keep them.
+
+# --- Instructor-supplied course materials (copyright) ------------------------
+Assignment_1_Earnings_Call_Analysis.pdf
+Assignment_1_Starter.ipynb
+Named-Entity-Recognition-NER-From-Rules-to-Large-Language-Models.pdf
+Tokenization-From-Classic-NLP-to-Modern-LLMs.pdf
+Tokenization_Complete_Guide.ipynb
+*.pptx
+ECT.zip
+# raw S&P-formatted transcripts (instructor-distributed) — do not redistribute
+transcripts/
+
+# --- Internal AI-coding scaffolding (personal paths, not a deliverable) ------
+docs/superpowers/
+# --- Shell artifacts ---------------------------------------------------------
+=*
+
+# --- Misc --------------------------------------------------------------------
+*.log

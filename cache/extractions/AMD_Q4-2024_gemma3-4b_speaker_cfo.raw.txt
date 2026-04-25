@@ -1,0 +1,3 @@
+```json
+{"sentiment": 0.9, "rationale": "The CFO highlights record revenue growth, significant margin expansion, and a strong outlook for 2025, indicating a very bullish assessment."}
+```

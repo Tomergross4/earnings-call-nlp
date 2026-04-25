@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": -0.65,
+  "sentiment_bucket": "very_bearish",
+  "wins": [
+    "Implementation of DRIVE cost reductions ($390 million)",
+    "New pricing actions (fuel surcharges, demand surcharges)",
+    "Network transformation progress (Network 2.0, Tricolor)",
+    "Significant progress in Europe (service levels, churn reduction)",
+    "Launch of Shipment Eligibility Orchestrator"
+  ],
+  "risks": [
+    "Weak Q1 demand environment (particularly U.S. domestic)",
+    "Industrial economy weakness impacting B2B volumes",
+    "Shift in customer preference to deferred services",
+    "Expiration of USPS contract",
+    "Increased competition in LTL market"
+  ],
+  "guidance": "lowered",
+  "themes": [
+    "macro",
+    "pricing",
+    "network",
+    "cost_reduction",
+    "e-commerce"
+  ]
+}

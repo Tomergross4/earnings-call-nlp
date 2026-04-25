@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.15,
+  "sentiment_bucket": "neutral",
+  "wins": [
+    "Strong fee-based revenue growth",
+    "Improved consumer auto portfolio performance",
+    "Net recoveries in home lending portfolio",
+    "Continued decline in headcount (16 consecutive quarters)",
+    "Increased noninterest income (19% year-over-year)"
+  ],
+  "risks": [
+    "Decline in net interest income ($1.2 billion)",
+    "Elevated funding costs and deposit migration",
+    "Lumpy commercial real estate office losses",
+    "Potential for further regulatory actions",
+    "Economic headwinds (slowing growth, inflation, interest rates)"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "credit",
+    "rate risk",
+    "regulatory",
+    "efficiency",
+    "strategy"
+  ]
+}
+```

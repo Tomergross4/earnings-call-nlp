@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.25,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Asset cap lifted, unlocking capital deployment",
+    "Net income and EPS up YoY and QoQ",
+    "Improved credit performance (lower charge-offs)",
+    "Deposit costs declining",
+    "Increased investment banking fees"
+  ],
+  "risks": [
+    "Uncertainty regarding trade negotiations",
+    "Potential downside risks to economic growth",
+    "Consumer spending softening slightly",
+    "Commercial real estate portfolio challenges",
+    "Continued regulatory scrutiny"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "capital deployment",
+    "credit quality",
+    "regulatory environment",
+    "economic outlook",
+    "transformation"
+  ]
+}
+```

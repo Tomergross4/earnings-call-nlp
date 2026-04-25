@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 1.0,
+  "rationale": "The CFO's statements are overwhelmingly positive, highlighting record revenue growth, accelerating demand, significant investments in R&D, and substantial future opportunities across multiple sectors (data center, gaming, professional visualization, automotive, and physical AI)."
+}
+```

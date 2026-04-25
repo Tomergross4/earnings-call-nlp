@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.65,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record data center segment annual revenue",
+    "Significant double-digit percentage growth in data center and client segments",
+    "Strong customer traction for Instinct MI300 GPUs",
+    "Launch of Ryzen 8000 Series notebooks and desktop processors",
+    "Significant progress expanding the ecosystem of AI developers working on AMD platforms"
+  ],
+  "risks": [
+    "Mixed demand environment",
+    "Lower client and gaming segment revenue",
+    "Soft overall Embedded demand",
+    "Decline in semi-custom SoC sales",
+    "Inventory normalization impacting Embedded and Gaming segments"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data center",
+    "cpu",
+    "gpu",
+    "innovation"
+  ]
+}
+```

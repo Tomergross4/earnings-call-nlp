@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.25,
+  "rationale": "The analyst expresses cautious optimism, highlighting positive results in several areas (markets, private banking, trading) while acknowledging challenges like regulatory scrutiny, a shrinking book, and a need to improve ROE. There's a sense of careful observation and strategic thinking rather than outright bullishness or pessimism."
+}
+```

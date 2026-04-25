@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "Record revenue of $39.9 billion",
+    "15% ROTCE",
+    "CCB card spend up 7%",
+    "Investment Banking revenue up 13%",
+    "Record full-year net income of $50 billion"
+  ],
+  "risks": [
+    "FDIC special assessment of $2.9 billion",
+    "Deposit balances down 8% year-on-year",
+    "Commercial real estate valuation deterioration",
+    "Expected sequential decline in NII",
+    "Uncertainty surrounding regulatory proposals"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "interest_rates",
+    "credit_risk",
+    "deposits",
+    "capital_markets",
+    "macro"
+  ]
+}
+```

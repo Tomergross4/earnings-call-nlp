@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO expresses strong optimism regarding AMD's performance, highlighting record revenue, significant share gains, and substantial investments in next-generation AI technologies, indicating a very bullish outlook."
+}
+```

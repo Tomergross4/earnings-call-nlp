@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.9,
+  "rationale": "The CEO highlights significant revenue growth, exceeding expectations, strong market share gains across multiple product lines (EPYC, Instinct), and strategic partnerships, indicating a very positive outlook."
+}
+```

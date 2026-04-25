@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.25,
+  "rationale": "The CFO presented strong sales growth figures across multiple business segments, particularly Innovative Medicine, alongside positive adjusted earnings per share results. While acknowledging some headwinds like margin deleveraging and competitive pressures, the overall tone suggests a positive performance and outlook."
+}
+```

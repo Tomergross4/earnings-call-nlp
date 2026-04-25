@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.6,
+  "rationale": "The analyst expresses significant concerns regarding balance sheet strategy, deposit growth, NII pressures, and potential loan losses, indicating a bearish outlook."
+}
+```

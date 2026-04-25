@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": 0.8,
+  "rationale": "The CEO expresses optimism about the company's performance, highlighting strong growth, record assets under management, and a positive outlook for capital markets recovery. They acknowledge challenges but frame them as temporary and believe the company is well-positioned for future growth, indicating a bullish sentiment."
+}
+```

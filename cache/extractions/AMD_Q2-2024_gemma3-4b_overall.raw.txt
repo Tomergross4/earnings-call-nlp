@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.35,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record Data Center GPU revenue ($1B+)",
+    "Strong growth in EPYC CPU sales",
+    "Increased adoption of Instinct MI300X by hyperscalers",
+    "Expansion of AMD-powered cloud instances (900+)",
+    "Multiple large wins across diverse industries (Adobe, Boeing, etc.)"
+  ],
+  "risks": [
+    "Decline in Gaming segment revenue",
+    "Decline in Embedded segment revenue",
+    "Semi-custom SoC sales decline",
+    "Inventory normalization",
+    "Reliance on AI accelerator market growth"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "data_center",
+    "cpu",
+    "gpu",
+    "rocm"
+  ]
+}
+```

@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record AUM",
+    "Highest organic base fee growth in over 4 years",
+    "Significant new asset inflows ($205B)",
+    "Acquisition of HPS and ElmTree closed",
+    "Expansion of private markets, digital assets, and technology capabilities"
+  ],
+  "risks": [
+    "Nonoperating investment losses (Circle)",
+    "Higher performance fees impacting margins",
+    "Increased share count",
+    "Institutional index outflows",
+    "Tariff announcement uncertainty"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "growth",
+    "digital assets",
+    "private markets",
+    "technology",
+    "client engagement"
+  ]
+}

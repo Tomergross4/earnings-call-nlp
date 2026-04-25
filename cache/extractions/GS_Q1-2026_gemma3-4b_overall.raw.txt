@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.65,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Record net revenues ($17.2 billion)",
+    "Second highest earnings per share ($17.55)",
+    "Strong client engagement across franchises",
+    "Record M&A advisory volume",
+    "Significant inflows into Asset & Wealth Management ($62 billion)"
+  ],
+  "risks": [
+    "Increased market volatility and AI-driven disruption",
+    "Heightened uncertainty in private credit and Middle East conflict",
+    "Tougher market-making backdrop in FICC",
+    " NIM compression in Asset & Wealth Management",
+    "Regulatory uncertainty and Basel III finalization"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "markets",
+    "ai",
+    "private credit",
+    "geopolitics",
+    "regulatory"
+  ]
+}
+```

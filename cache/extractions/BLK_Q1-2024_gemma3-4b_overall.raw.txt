@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.75,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record AUM of $10.5 trillion",
+    "$76 billion in long-term net inflows",
+    "180 basis points margin expansion",
+    "ETF net inflows of $67 billion",
+    "Bitcoin ETC inflows of $14 billion"
+  ],
+  "risks": [
+    "Institutional money market outflows",
+    "Seasonal outflows from institutional money market funds",
+    "Institutional index outflows",
+    "Client rebalancing into equities",
+    "Cash management rotations"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "growth",
+    "markets",
+    "technology",
+    "private markets",
+    "client flows"
+  ]
+}
+```

@@ -1,0 +1,28 @@
+```json
+{
+  "overall_sentiment": 0.85,
+  "sentiment_bucket": "very_bullish",
+  "wins": [
+    "Record Instinct and EPYC product sales",
+    "Significant increase in Data Center segment revenue (122%)",
+    "Strong growth in EPYC CPU share",
+    "Broad adoption of EPYC CPUs across cloud providers",
+    "Successful acquisition of ZT Systems to bolster AI infrastructure"
+  ],
+  "risks": [
+    "Decline in Gaming segment revenue",
+    "Ongoing softness in the industrial market (Embedded)",
+    "Potential risks associated with the ZT acquisition and divestiture",
+    "Dependence on Microsoft and Sony for semi-custom sales",
+    "Macroeconomic uncertainties"
+  ],
+  "guidance": "raised",
+  "themes": [
+    "ai",
+    "epyc",
+    "data_center",
+    "client_processors",
+    "gaming"
+  ]
+}
+```

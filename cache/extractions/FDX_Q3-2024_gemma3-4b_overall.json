@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.45,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Operating income growth and margin expansion in a declining revenue environment (3 consecutive quarters)",
+    "16% improvement in adjusted operating income at the enterprise level",
+    "Ground adjusted operating income increased 14%",
+    "DRIVE initiatives delivered $550 million in benefits",
+    "Network 2.0 rollout progressing with over 50 locations implemented"
+  ],
+  "risks": [
+    "Declining revenue environment",
+    "International trade weakness",
+    "Inflationary pressures ($200 million year-over-year)",
+    "USPS contract negotiations uncertainty",
+    "Shift towards deferred services in the international market"
+  ],
+  "guidance": "reaffirmed",
+  "themes": [
+    "transformation",
+    "drive",
+    "network",
+    "e-commerce",
+    "inflation"
+  ]
+}

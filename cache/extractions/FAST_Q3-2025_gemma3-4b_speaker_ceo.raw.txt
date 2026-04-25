@@ -1,0 +1,6 @@
+```json
+{
+  "sentiment": -0.7,
+  "rationale": "The CEO expresses significant concerns about past performance, acknowledges a challenging year, and anticipates potential margin pressures in the near future, indicating a bearish outlook."
+}
+```

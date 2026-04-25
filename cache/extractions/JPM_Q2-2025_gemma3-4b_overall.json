@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": 0.15,
+  "sentiment_bucket": "bullish",
+  "wins": [
+    "Strong net income of $15 billion",
+    "Revenue of $45.7 billion",
+    "ROTCE of 21%",
+    "Upward trend in Markets revenue (15%)",
+    "Significant Asset & Wealth Management inflows ($31 billion)"
+  ],
+  "risks": [
+    "Revenue down $5.3 billion year-on-year",
+    "CET1 ratio decline (40 basis points)",
+    "Increased RWA driven by wholesale lending",
+    "NII ex Markets guidance reduced",
+    "Home Lending revenue down 5% year-on-year"
+  ],
+  "guidance": "mixed",
+  "themes": [
+    "banking",
+    "markets",
+    "credit",
+    "regulation",
+    "growth"
+  ]
+}

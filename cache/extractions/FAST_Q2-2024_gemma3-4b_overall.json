@@ -1,0 +1,26 @@
+{
+  "overall_sentiment": -0.45,
+  "sentiment_bucket": "bearish",
+  "wins": [
+    "Successful Onsite support during hurricane in Texas",
+    "Rollout of Fastenal Intelligence (FI) chatbot",
+    "Increased Onsite and FMI Technology signings",
+    "Growth in core accounts",
+    "Healthy operating cash flow and strong balance sheet"
+  ],
+  "risks": [
+    "Persistent challenging industrial market conditions",
+    "Sub-50 Purchasing Managers' Index (PMI) for 19 consecutive months",
+    "Decreasing order values ($224 to $217)",
+    "Slow growth in core accounts (4% decrease)",
+    "Vending revenue decline"
+  ],
+  "guidance": "lowered",
+  "themes": [
+    "macro",
+    "supply_chain",
+    "technology",
+    "customer_acquisition",
+    "pricing"
+  ]
+}
