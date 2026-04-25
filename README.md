@@ -51,7 +51,7 @@ streamlit run app.py
 ```
 Opens at http://localhost:8501. Three tabs:
 - **Per-Call Explorer** — searchable per-call table (sortable, colored returns) + ticker-level price overview (YTD/1D/1W/1M/3M/6M/1Y/2Y) + drill-down with sentiment, wins, risks, themes, and pre-call momentum.
-- **Ticker Timeline** — sentiment and forward-return Altair charts aligned on shared `YYYY-Qn` axis, plus a sortable quarter-by-quarter summary.
+- **Ticker Timeline** — sentiment and forward-return Plotly charts aligned on shared `YYYY-Qn` axis, plus a sortable quarter-by-quarter summary.
 - **Backtest** — production model only (Contrarian SetFit, +0.19 Sharpe at 21d / +0.58 at 5d). The 8-signal comparison and full horizon sweep live in the writeup PDF, not the dashboard.
 
 ## Reproduce from cache only (skip LLM)
