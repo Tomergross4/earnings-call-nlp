@@ -532,25 +532,34 @@ def render(md: str) -> list:
         width=CONTENT_W,
     ))
     flow.append(Spacer(1, 8))
-    flow.append(_kpi_strip(
-        [
-            ("131",   "Transcripts"),
-            ("14",    "Tickers"),
-            ("8",     "Signals tested"),
-            ("+0.58", "Best Sharpe (5d)"),
-        ],
-        CONTENT_W,
-    ))
+    kpi_items = [
+        ("131",   "Transcripts"),
+        ("14",    "Tickers"),
+        ("8",     "Signals tested"),
+        ("+0.46", "Best Sharpe (63d)"),
+    ]
+    nlp_eval_path = ROOT / "outputs" / "nlp_evaluation.json"
+    if nlp_eval_path.exists():
+        try:
+            import json as _json
+            _ev = _json.loads(nlp_eval_path.read_text())
+            _agree = _ev.get("directional_agreement")
+            if _agree is not None:
+                kpi_items.append((f"{_agree:.0%}", "LLM-as-a-Judge Agreement"))
+        except Exception:
+            pass
+    flow.append(_kpi_strip(kpi_items, CONTENT_W))
     flow.append(Spacer(1, SECTION_GAP))
     flow.append(_commentary(
         "Pipeline parses S&P Capital IQ transcripts, extracts sentiment, wins, risks, and "
         "guidance with gemma3:4b across a four-call hybrid (overall, CEO, CFO, analyst), "
         "layers FinBERT and Loughran-McDonald lexicon scores plus pre-call price momentum, "
         "and predicts forward excess return over SPY on a strict 70/30 per-ticker temporal "
-        "split. Eight signals are compared end-to-end across four horizons (1d, 5d, 21d, 63d). "
-        "The five-day Contrarian SetFit signal is the headline finding — the only configuration "
-        "in the suite with positive hit rate (0.59), positive rank IC (+0.04), and positive "
-        "naïve Sharpe (+0.58)."
+        "split, with dynamic T+0/T+1 entry adjusted for BMO vs. AMC reporting habits. Eight "
+        "signals are compared end-to-end across four horizons (1d, 5d, 21d, 63d). The "
+        "Contrarian SetFit signal is the headline finding — its hit rate climbs monotonically "
+        "with horizon and the 63-day configuration is the only one in the suite with positive "
+        "hit rate (0.548), positive rank IC (+0.123), and positive naïve Sharpe (+0.46)."
     ))
     flow.append(Spacer(1, SECTION_GAP))
 

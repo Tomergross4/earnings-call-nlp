@@ -31,6 +31,7 @@ FEATURES_PATH    = Path("outputs/features.parquet")
 RESULTS_PATH     = Path("outputs/writeup_results.json")
 PREDICTIONS_PATH = Path("outputs/model_predictions.parquet")
 IMPORTANCE_PATH  = Path("outputs/feature_importance.json")
+NLP_EVAL_PATH    = Path("outputs/nlp_evaluation.json")
 TRANSCRIPTS_DIR  = Path("transcripts")
 PRICES_DIR       = Path("cache/prices")
 EQUITY_FIG       = Path("outputs/figures/equity_curve.png")
@@ -103,6 +104,7 @@ st.markdown("""
 
 .kpi-row {display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 18px;}
 .kpi-row.k5 {grid-template-columns: repeat(5, 1fr);}
+.kpi-row.k6 {grid-template-columns: repeat(6, 1fr);}
 .kpi-card {
     background: white; border: 1px solid #E5E7EB; border-radius: 10px;
     padding: 14px 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
@@ -295,6 +297,18 @@ def load_importance() -> Dict:
 
 
 @st.cache_data(show_spinner=False)
+def load_nlp_eval() -> Dict:
+    """LLM-as-a-Judge evaluation dump from scripts/evaluate_nlp.py.
+
+    Empty dict when the script hasn't been run (no ANTHROPIC_API_KEY in dev env);
+    callers should treat absence as a soft skip, not an error.
+    """
+    if not NLP_EVAL_PATH.exists():
+        return {}
+    return json.loads(NLP_EVAL_PATH.read_text())
+
+
+@st.cache_data(show_spinner=False)
 def load_price(ticker: str) -> Optional[pd.DataFrame]:
     p = PRICES_DIR / f"{ticker}.parquet"
     if not p.exists():
@@ -463,13 +477,36 @@ with tab0:
     avg_llm       = features["overall_sentiment"].mean()
     avg_lm        = features["lm_sentiment"].mean()
 
-    kpi_block([
+    nlp_eval = load_nlp_eval()
+    kpi_items = [
         ("Tickers Covered",      f"{n_tickers}"),
         ("Total Transcripts",    f"{n_transcripts}"),
         ("GICS Sectors",         f"{n_sectors}"),
         ("Avg LLM Sentiment",    fmt_num(avg_llm, 2)),
         ("Avg LM Lexicon",       fmt_num(avg_lm, 2)),
-    ], cls="k5")
+    ]
+    if nlp_eval.get("directional_agreement") is not None:
+        kpi_items.append((
+            "NLP Accuracy vs. Commercial Baseline (Ground Truth)",
+            f"{nlp_eval['directional_agreement']:.0%}",
+        ))
+        kpi_block(kpi_items, cls="k6")
+    else:
+        kpi_block(kpi_items, cls="k5")
+
+    if nlp_eval.get("directional_agreement") is not None:
+        st.caption(
+            f"LLM-as-a-Judge: {nlp_eval['model_judge']} grades a {nlp_eval['n_sample']}-call "
+            f"random sample against our local {nlp_eval['model_local']} extractions. "
+            f"Directional agreement = {nlp_eval['directional_agreement']:.1%}, "
+            f"sentiment MAE = {nlp_eval['sentiment_mae']:.2f}. "
+            "This measures NLP comprehension; the financial backtest in Task 4 measures alpha."
+        )
+    else:
+        st.caption(
+            "ℹ️ NLP-vs-commercial-baseline metric not computed yet. "
+            "Set ANTHROPIC_API_KEY and run `py scripts/evaluate_nlp.py` to populate."
+        )
 
     st.markdown("<div class='sub-h'>Raw stock performance — independent of S&P 500</div>",
                 unsafe_allow_html=True)
@@ -1048,7 +1085,7 @@ with tab3:
         f"""
         <div class='callout'>
         <b>Target:</b> forward {HORIZON_DAYS}-day excess return vs SPY (binary up/down classification),
-        T+1 entry · {TRAIN_FRAC:.0%}/{1 - TRAIN_FRAC:.0%} strict-temporal split per ticker.<br>
+        T+0 / T+1 entry (BMO vs. AMC adjusted) · {TRAIN_FRAC:.0%}/{1 - TRAIN_FRAC:.0%} strict-temporal split per ticker.<br>
         <b>Model:</b> XGBoost (Optuna-tuned, TimeSeriesSplit CV) — multivariate over all
         Task-1 + Task-2 features (LLM sentiment, speaker gaps, guidance, risks, themes,
         FinBERT, LM lexicon, momentum). Predictions and feature importance come from
@@ -1252,7 +1289,7 @@ with tab4:
         f"""
         <div class='callout'>
         <b>Train window:</b> {tr_range} &nbsp;|&nbsp; <b>Test window:</b> {te_range}<br>
-        <b>Split:</b> strict-temporal {TRAIN_FRAC:.0%} per ticker · entry T+1 close · horizon {HORIZON_DAYS}d ·
+        <b>Split:</b> strict-temporal {TRAIN_FRAC:.0%} per ticker · T+0 / T+1 entry (BMO vs. AMC adjusted) · horizon {HORIZON_DAYS}d ·
         excess vs SPY · Sharpe annualized via √(252 / {HORIZON_DAYS}).
         </div>
         """,
@@ -1337,9 +1374,9 @@ with tab4:
                 "vs. buy-and-hold SPY (absolute)</div>",
                 unsafe_allow_html=True)
     st.caption("Strategy: invert the SetFit P(up) — long when the model says down, short when it says up. "
-               "This is our +0.19 Sharpe production model at the 21d horizon. "
-               "Excess return = stock − SPY over 21 trading days starting at T+1. "
-               "SPY benchmark uses the same call dates with T+1 entry — zero look-ahead.")
+               "This is our +0.14 Sharpe production model at the 21d horizon. "
+               "Excess return = stock − SPY over 21 trading days starting at T+0 (BMO) or T+1 (AMC). "
+               "SPY benchmark uses the same entry bar per call — zero look-ahead.")
 
     preds = load_predictions()
     spy = load_price("SPY")
@@ -1482,11 +1519,13 @@ with tab4:
         """
         <div class='callout'>
         <b>Honest caveats.</b> Test set is 36 settled calls — too small for any single
-        Sharpe to be statistically significant. The train→test regime shift (P(up) 0.61 → 0.42)
+        Sharpe to be statistically significant. The train→test regime shift (P(up) 0.61 → 0.36)
         means a long-bias baseline mechanically underperforms in this window. The headline
-        positive-Sharpe finding (Contrarian SetFit at +0.58 over 5d) lives at the shorter horizon;
-        at 21d the same signal earns +0.19 Sharpe, marginal. Read this as evidence that
-        post-call sentiment over-shoots — not as a deployable strategy.
+        positive-Sharpe finding (Contrarian SetFit at +0.46 over 63d, n=31) lives at the longer horizon;
+        at 21d the same signal earns +0.14 Sharpe, marginal. Hit rate climbs monotonically with
+        horizon (0.405 → 0.524 → 0.528 → 0.548), pointing to slow repricing of the call narrative
+        over a fiscal quarter. Read this as evidence that post-call sentiment over-shoots — not
+        as a deployable strategy.
         </div>
         """,
         unsafe_allow_html=True,

@@ -1,0 +1,176 @@
+{
+  "model_local": "gemma3:4b",
+  "model_judge": "claude-sonnet-4-6",
+  "n_sample": 15,
+  "seed": 42,
+  "directional_agreement": 0.9333,
+  "sentiment_mae": 0.304,
+  "generated_at": "2026-04-26T23:23:45",
+  "samples": [
+    {
+      "ticker": "C",
+      "quarter": "Q1-2024",
+      "call_date": "2024-04-12",
+      "gemma_sentiment": -0.45,
+      "claude_sentiment": 0.52,
+      "claude_rationale": "Citi reported solid Q1 2024 results with 3%+ revenue growth ex-divestitures, 35% investment banking growth, strong services momentum, and improving capital ratios, though offset by elevated expenses, restructuring charges, and still-below-target RoTCE of 7.6%.",
+      "directional_agreement": false,
+      "abs_error": 0.97,
+      "judge_seconds": 3.72
+    },
+    {
+      "ticker": "AMD",
+      "quarter": "Q4-2023",
+      "call_date": "2024-01-30",
+      "gemma_sentiment": 0.65,
+      "claude_sentiment": 0.85,
+      "claude_rationale": "AMD reported record data center revenue, raised 2024 AI GPU guidance from $2B to $3.5B+, and highlighted strong MI300X ramp and EPYC share gains, with only gaming and embedded declines tempering the broadly bullish tone.",
+      "directional_agreement": true,
+      "abs_error": 0.2,
+      "judge_seconds": 3.23
+    },
+    {
+      "ticker": "INTC",
+      "quarter": "Q3-2024",
+      "call_date": "2024-10-31",
+      "gemma_sentiment": -0.75,
+      "claude_sentiment": -0.2,
+      "claude_rationale": "While Intel showed sequential revenue growth and progress on cost cuts, massive impairment charges, a $0.46 EPS loss, missed Gaudi targets, and ongoing foundry losses reflect significant structural challenges despite cautiously improving underlying trends.",
+      "directional_agreement": true,
+      "abs_error": 0.55,
+      "judge_seconds": 2.55
+    },
+    {
+      "ticker": "GS",
+      "quarter": "Q3-2025",
+      "call_date": "2025-10-15",
+      "gemma_sentiment": 0.85,
+      "claude_sentiment": 0.87,
+      "claude_rationale": "The transcript highlights record revenues, EPS, AUM, alternatives fundraising, dominant M&A market share, and strong forward pipeline across all major business lines, with only mild caution noted around market cycles and AI exuberance.",
+      "directional_agreement": true,
+      "abs_error": 0.02,
+      "judge_seconds": 2.7
+    },
+    {
+      "ticker": "GS",
+      "quarter": "Q1-2025",
+      "call_date": "2025-04-14",
+      "gemma_sentiment": 0.25,
+      "claude_sentiment": 0.72,
+      "claude_rationale": "Goldman Sachs reported strong Q1 results with record equities revenues, record AUS of $3.2 trillion, growing financing revenues, and rising M&A backlog, though tempered by macro uncertainty, recession risk, muted investment banking activity, and caution about Q2 conditions post-April 2.",
+      "directional_agreement": true,
+      "abs_error": 0.47,
+      "judge_seconds": 3.29
+    },
+    {
+      "ticker": "C",
+      "quarter": "Q4-2024",
+      "call_date": "2025-01-15",
+      "gemma_sentiment": 0.3,
+      "claude_sentiment": 0.55,
+      "claude_rationale": "Citi reported strong 2024 results with net income up ~40%, record equities revenue, $20B buyback authorization, and broad business growth, but tempered sentiment with a lowered 2026 RoTCE target of 10-11% and elevated transformation/technology investment needs.",
+      "directional_agreement": true,
+      "abs_error": 0.25,
+      "judge_seconds": 3.23
+    },
+    {
+      "ticker": "BLK",
+      "quarter": "Q4-2024",
+      "call_date": "2025-01-15",
+      "gemma_sentiment": 0.85,
+      "claude_sentiment": 0.93,
+      "claude_rationale": "BlackRock reported record AUM of $11.6 trillion, record net inflows of $641 billion, double-digit revenue/operating income/EPS growth, 280 bps margin expansion, and 7% annualized organic base fee growth in Q4\u2014the highest in three years\u2014with management expressing strong optimism about 2025 growth trajectory from GIP, HPS, and Preqin integrations.",
+      "directional_agreement": true,
+      "abs_error": 0.08,
+      "judge_seconds": 3.24
+    },
+    {
+      "ticker": "BLK",
+      "quarter": "Q2-2025",
+      "call_date": "2025-07-15",
+      "gemma_sentiment": 0.45,
+      "claude_sentiment": 0.88,
+      "claude_rationale": "BlackRock reported record AUM of $12.5 trillion, double-digit revenue/EPS growth, 6% organic base fee growth for the fourth consecutive quarter above 5%, strong ETF inflows, successful GIP V close above target, and HPS closing adding significant revenue, with management expressing high confidence in continued durable growth.",
+      "directional_agreement": true,
+      "abs_error": 0.43,
+      "judge_seconds": 3.02
+    },
+    {
+      "ticker": "NVDA",
+      "quarter": "Q3-2025",
+      "call_date": "2024-11-20",
+      "gemma_sentiment": 0.85,
+      "claude_sentiment": 0.95,
+      "claude_rationale": "NVIDIA reported record Q3 revenue of $35.1B (+94% YoY), record Data Center revenue of $30.8B (+112% YoY), Blackwell in full production with staggering demand, Q4 guidance of $37.5B above prior estimates, and management expressed strong confidence across all segments and multiple AI scaling vectors.",
+      "directional_agreement": true,
+      "abs_error": 0.1,
+      "judge_seconds": 3.39
+    },
+    {
+      "ticker": "AMD",
+      "quarter": "Q4-2025",
+      "call_date": "2026-02-03",
+      "gemma_sentiment": 0.65,
+      "claude_sentiment": 0.92,
+      "claude_rationale": "AMD reported record Q4 and full-year revenue, net income, and free cash flow with 34% annual growth, accelerating Data Center AI momentum, strong EPYC share gains, and confident multi-year guidance of >35% CAGR and $20+ EPS, reflecting a highly bullish outlook across all segments.",
+      "directional_agreement": true,
+      "abs_error": 0.27,
+      "judge_seconds": 2.99
+    },
+    {
+      "ticker": "AMD",
+      "quarter": "Q4-2024",
+      "call_date": "2025-02-04",
+      "gemma_sentiment": 0.75,
+      "claude_sentiment": 0.88,
+      "claude_rationale": "AMD reported record revenue, near-doubled Data Center revenue, strong share gains across CPU and AI segments, accelerated MI350/MI400 roadmaps, and guided for strong double-digit revenue and EPS growth in 2025, with only minor headwinds in Gaming and Embedded.",
+      "directional_agreement": true,
+      "abs_error": 0.13,
+      "judge_seconds": 3.69
+    },
+    {
+      "ticker": "BLK",
+      "quarter": "Q3-2024",
+      "call_date": "2024-10-11",
+      "gemma_sentiment": 0.85,
+      "claude_sentiment": 0.95,
+      "claude_rationale": "BlackRock reported record $221B quarterly net inflows, record revenue and operating income, 350bps margin expansion, and 5% organic base fee growth, with strong forward-looking momentum from GIP, Aladdin, iShares, and private markets initiatives.",
+      "directional_agreement": true,
+      "abs_error": 0.1,
+      "judge_seconds": 3.07
+    },
+    {
+      "ticker": "FDX",
+      "quarter": "Q4-2025",
+      "call_date": "2025-06-24",
+      "gemma_sentiment": 0.3,
+      "claude_sentiment": 0.35,
+      "claude_rationale": "FedEx reported solid Q4 results with adjusted operating income up 8% and margin expansion, $4B in cumulative cost savings achieved, and clear FY26 targets, but faces headwinds from weak B2B demand, USPS contract expiration, trade policy volatility, and only flat-to-2% Q1 revenue growth guidance.",
+      "directional_agreement": true,
+      "abs_error": 0.05,
+      "judge_seconds": 11.35
+    },
+    {
+      "ticker": "GS",
+      "quarter": "Q2-2024",
+      "call_date": "2024-07-15",
+      "gemma_sentiment": 0.2,
+      "claude_sentiment": 0.72,
+      "claude_rationale": "Goldman Sachs reported solid Q2 results with strong year-over-year revenue growth, record AUS of $2.9 trillion, record financing revenues, rising IB backlog, increased dividend, and bullish commentary on M&A recovery and alternatives fundraising, partially offset by SCB capital buffer concerns and moderating buybacks guidance.",
+      "directional_agreement": true,
+      "abs_error": 0.52,
+      "judge_seconds": 3.03
+    },
+    {
+      "ticker": "WFC",
+      "quarter": "Q4-2024",
+      "call_date": "2025-01-15",
+      "gemma_sentiment": 0.3,
+      "claude_sentiment": 0.72,
+      "claude_rationale": "Management highlighted solid earnings growth, 15% fee revenue increase, $25B capital returned, strong credit discipline, and optimism about 2025 growth opportunities, though NII declined year-over-year and loan demand remained weak.",
+      "directional_agreement": true,
+      "abs_error": 0.42,
+      "judge_seconds": 10.97
+    }
+  ]
+}

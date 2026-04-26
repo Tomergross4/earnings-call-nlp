@@ -25,6 +25,7 @@ NLP for Finance - Spring 2026, Assignment 1. Extracts sentiment, wins/risks, gui
 ```bash
 pip install -r requirements.txt
 ```
+This installs `anthropic` and `python-dotenv` for the optional LLM-as-a-Judge evaluation step (see *NLP Quality Assurance* below); everything else runs without an Anthropic key.
 
 ### 3. Transcripts
 The S&P-formatted transcripts (`ECT.zip` and the unzipped `transcripts/` folder) are **not redistributed** in this repo — they are instructor-supplied course material. Two options:
@@ -54,7 +55,7 @@ Opens at http://localhost:8501. Five tabs, mapped to the assignment rubric:
 - **Task 1 — Per-Call** — searchable table of all 131 calls with drill-down: sentiment, wins, risks, themes, guidance, pre-call momentum, full transcript link.
 - **Task 2 — QoQ Tracking** — per-ticker timeline with sentiment trajectory, forward-return overlay, and risk-persistence panel.
 - **Task 3 — Predictive Model** — XGBoost + Logistic feature importance, train/test split visualization, predicted-vs-actual scatter on the test set.
-- **Task 4 — Backtest** — Contrarian SetFit equity curve (+0.19 Sharpe at 21d / +0.58 at 5d), 8-signal comparison table, horizon sweep.
+- **Task 4 — Backtest** — Contrarian SetFit equity curve (+0.14 Sharpe at 21d / +0.46 at 63d), 8-signal comparison table, horizon sweep.
 
 ## Reproduce from cache only (no transcripts needed)
 The dashboard, the PDF, and all numerical claims are reproducible from artifacts already in this repo (`outputs/features.parquet`, `outputs/writeup_results.json`, `outputs/model_predictions.parquet`, `cache/prices/`). You do **not** need `ECT.zip` for any of:
@@ -64,6 +65,17 @@ py scripts/build_pdf.py     # rebuild outputs/writeup.pdf
 ```
 To re-run anything upstream of `outputs/features.parquet` (re-parse, re-extract, re-fit features), drop `ECT.zip` in the project root first; the parser unzips on first run.
 
+## NLP Quality Assurance (LLM-as-a-Judge)
+Per professor feedback, stock-return performance measures *financial alpha*, not *NLP comprehension*. To grade the local `gemma3:4b` extractions on comprehension we use **Claude 3.5 Sonnet** as the commercial "school solution" and report directional-agreement % + sentiment MAE on a fixed 15-call sample. The script writes `outputs/nlp_evaluation.json`, which is then surfaced on the dashboard cover KPI row and the PDF cover.
+
+```bash
+# one-time: provide the key (either env var or .env file at repo root)
+echo "ANTHROPIC_API_KEY=sk-ant-..." > .env
+
+py scripts/evaluate_nlp.py
+```
+Without a key the script exits cleanly with a helpful message; the rest of the pipeline runs unchanged.
+
 ## Build the write-up PDF
 ```bash
 py scripts/build_pdf.py
@@ -72,7 +84,7 @@ Writes `outputs/writeup.pdf` from [docs/writeup.md](docs/writeup.md).
 
 ## Honesty guardrails
 
-- Entry price is T+1 close (never day-T).
+- Entry price uses dynamic T+0 or T+1 entry (adjusted for BMO/AMC reporting habits to capture intraday movement without look-ahead bias).
 - Train/test split is strict-temporal per ticker: first 70% of calls (by date) → train, remaining 30% → test. Hyperparameter tuning uses `TimeSeriesSplit(n_splits=5)` on the training set only.
 - Pre-call momentum windows use strictly pre-call data — no look-ahead.
 - LM lexicon sentiment is a *parallel column*, never a substitute for the LLM — the two sit side-by-side in the feature table so the grader can judge whether the LLM actually adds value.

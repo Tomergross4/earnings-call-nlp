@@ -12,6 +12,15 @@ import yfinance as yf
 from src.config import HORIZONS_DAYS, PRICES
 
 
+# BMO (Before Market Open) reporters can be entered at the same-day close (T+0)
+# without look-ahead — the call has already happened by 9:30 ET. AMC (After Market
+# Close) reporters print after the bell, so entry must wait one trading day (T+1).
+TIMING_HABITS = {
+    "JPM": "BMO", "C": "BMO", "WFC": "BMO", "GS": "BMO", "BLK": "BMO", "JNJ": "BMO", "FAST": "BMO",
+    "NVDA": "AMC", "AMD": "AMC", "INTC": "AMC", "PLTR": "AMC", "NKE": "AMC", "AVGO": "AMC", "FDX": "AMC",
+}
+
+
 def fetch_prices(ticker: str, start: str = "2023-09-01", end: Optional[str] = None) -> pd.DataFrame:
     """Load daily Close prices for a ticker; parquet cache for 24h."""
     PRICES.mkdir(parents=True, exist_ok=True)
@@ -40,21 +49,30 @@ def forward_return(
     horizon: int,
     use_excess: bool = True,
 ) -> Optional[float]:
-    """Close-to-close return from T+1 to T+1+horizon; excess vs SPY if requested."""
+    """Close-to-close excess return over `horizon` trading days, BMO/AMC adjusted.
+
+    Entry is T+0 close for BMO reporters (call already finished by the open) and
+    T+1 close for AMC reporters (call prints after the close). Both paths are
+    zero-lookahead: the entry bar is never earlier than the call itself.
+    """
     df = prices[ticker]
     d0 = pd.Timestamp(call_date)
-    entry = df[df.Date > d0].head(1)
+    timing = TIMING_HABITS.get(ticker, "AMC")
+    if timing == "BMO":
+        entry = df[df.Date >= d0].head(1)
+    else:
+        entry = df[df.Date > d0].head(1)
     if entry.empty:
         return None
     entry_date = entry.Date.iloc[0]
     entry_idx = int(df.index[df.Date == entry_date][0])
     if entry_idx + horizon >= len(df):
         return None
+    exit_date = df.Date.iloc[entry_idx + horizon]
     r = float(df.Close.iloc[entry_idx + horizon] / df.Close.iloc[entry_idx] - 1)
     if use_excess:
         spy = prices["SPY"]
         sp_e = spy[spy.Date == entry_date]
-        exit_date = df.Date.iloc[entry_idx + horizon]
         sp_x = spy[spy.Date == exit_date]
         if sp_e.empty or sp_x.empty:
             return None
