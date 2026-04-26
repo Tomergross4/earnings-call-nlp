@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses strong excitement and optimism about the acquisition of GIP, highlighting significant growth opportunities, strategic alignment, and a transformative impact on BlackRock's capabilities and market leadership."
-}
-```

@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses strong optimism about NVIDIA's future driven by agentic AI, significant partnerships, and a rapidly expanding ecosystem, coupled with confidence in revenue growth and a clear strategic advantage."
-}
-```

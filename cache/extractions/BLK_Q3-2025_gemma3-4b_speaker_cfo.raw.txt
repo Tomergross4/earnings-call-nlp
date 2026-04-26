@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CFO's remarks are overwhelmingly positive, highlighting record AUM, significant net inflows, strong revenue growth, and optimistic projections for future growth and profitability. Phrases like 'record AUM,' 'highest level in over 4 years,' 'market-leading organic growth,' and 'earnings in multiple expansion' clearly indicate a bullish outlook."
-}
-```

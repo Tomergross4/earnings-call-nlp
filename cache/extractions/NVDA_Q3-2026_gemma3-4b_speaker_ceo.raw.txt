@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses strong confidence in NVIDIA's position across multiple AI trends (accelerated computing, generative AI, agentic AI), highlighting significant investment, technological advantages, and revenue opportunities, indicating a very bullish outlook."
-}
-```

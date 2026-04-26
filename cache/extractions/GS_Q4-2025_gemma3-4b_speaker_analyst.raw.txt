@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.3,
-  "rationale": "The analyst expresses cautious optimism, highlighting strong results and acknowledging potential challenges like operating leverage and market conditions, suggesting a neutral overall sentiment."
-}
-```

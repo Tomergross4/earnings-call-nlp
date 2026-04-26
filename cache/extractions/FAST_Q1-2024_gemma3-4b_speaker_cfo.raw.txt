@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CFO expresses concerns about weak underlying demand, declining sales, operating margin pressures, and increased SG&A costs, indicating a bearish outlook."
-}
-```

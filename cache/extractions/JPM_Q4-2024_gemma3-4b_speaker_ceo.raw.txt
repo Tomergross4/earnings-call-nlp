@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.6, "rationale": "The CEO expresses concerns about potential instability, acknowledges personal health challenges, and downplays the value of special dividends, indicating a cautious and somewhat pessimistic outlook."}
-```

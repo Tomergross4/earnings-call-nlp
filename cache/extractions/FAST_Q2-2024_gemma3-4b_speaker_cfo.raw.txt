@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CFO expresses concerns about sluggish business activity, declining industrial production, negative pricing pressures, and margin compression, indicating a bearish outlook despite some positive developments like increased customer acquisition."
-}
-```

@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CEO expresses gratitude for Bob Kierlin's legacy and highlights positive execution and strategic adjustments, suggesting a cautiously optimistic outlook despite acknowledging a sluggish market."
-}
-```

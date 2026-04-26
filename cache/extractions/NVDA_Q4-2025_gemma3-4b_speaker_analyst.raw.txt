@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.3, "rationale": "The analyst asks probing questions about product ramps, demand dynamics, and margin expectations, indicating cautious optimism about NVIDIA's future."}
-```

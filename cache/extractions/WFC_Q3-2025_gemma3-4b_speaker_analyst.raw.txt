@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.7, "rationale": "The analyst repeatedly expresses concerns about profitability (ROE, WIM margins, NII), asks probing questions about potential risks (NDFI, SSFA), and highlights areas where the company is underperforming relative to peers, indicating a bearish outlook."}
-```

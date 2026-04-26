@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.75, "rationale": "The analyst repeatedly expresses concerns about profitability, efficiency, and potential trade-offs, highlighting a lack of confidence in Wells Fargo's growth strategy and its ability to improve returns, indicating a bearish outlook."}
-```

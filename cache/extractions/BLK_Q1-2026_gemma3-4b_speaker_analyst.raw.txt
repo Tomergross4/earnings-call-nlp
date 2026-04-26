@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.6, "rationale": "The analyst raises numerous concerns about market shifts, redemptions, and competitive pressures, indicating a cautious outlook."}
-```

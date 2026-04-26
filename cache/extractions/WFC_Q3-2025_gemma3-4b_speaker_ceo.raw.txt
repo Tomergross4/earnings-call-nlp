@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CEO expresses strong optimism regarding the company's performance, citing increased revenue, improved returns, and strategic investments, alongside the removal of the asset cap and a refocus on growth opportunities."
-}
-```

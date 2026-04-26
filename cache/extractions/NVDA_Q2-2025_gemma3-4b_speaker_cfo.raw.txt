@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CFO highlights record revenue growth across multiple segments (Data Center, Automotive, Healthcare, Gaming, and Pro Visualization), driven by strong demand for NVIDIA's products and services, particularly related to generative AI and Blackwell, indicating a very bullish outlook."
-}
-```

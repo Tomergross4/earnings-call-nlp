@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.65,
-  "rationale": "The text reveals significant concerns regarding Intel's execution, declining margins, uncertain product roadmaps (particularly 7nm and 18A), and a lack of clear progress towards its turnaround goals, leading to a bearish assessment."
-}
-```

@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.7, "rationale": "The analyst expresses significant concerns regarding roadmap execution, supply constraints, margin pressure, and uncertainty surrounding Blackwell's ramp and competitive positioning, indicating a bearish outlook."}
-```

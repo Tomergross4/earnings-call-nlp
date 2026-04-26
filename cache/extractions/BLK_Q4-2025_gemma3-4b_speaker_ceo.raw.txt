@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO's remarks are overwhelmingly positive, highlighting significant growth, strong inflows, high margins, and innovative strategies across multiple asset classes and retirement solutions."
-}
-```

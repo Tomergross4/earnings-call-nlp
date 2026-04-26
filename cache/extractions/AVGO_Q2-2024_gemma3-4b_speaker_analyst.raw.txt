@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.7, "rationale": "The analyst repeatedly expresses optimism about Broadcom's growth, particularly in AI networking and overall revenue guidance, while also acknowledging competitive pressures and inventory corrections. This leans towards a bullish assessment."}
-```

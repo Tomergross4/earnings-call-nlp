@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses excitement about strong results, significant sales growth across multiple sectors, and substantial increases in guidance, indicating a very positive outlook."
-}
-```

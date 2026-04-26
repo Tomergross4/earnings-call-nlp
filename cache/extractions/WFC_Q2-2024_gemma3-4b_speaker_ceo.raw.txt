@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CEO highlights several positive developments, including strong fee-based revenue growth, improvements in credit performance, strategic initiatives like diversifying revenue sources and launching new credit cards, and a strengthened risk management framework. While acknowledging risks and headwinds, the overall tone is cautiously optimistic and focused on execution and future opportunities."
-}
-```

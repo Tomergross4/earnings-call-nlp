@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO highlights strong financial results (net income, EPS, ROTCE), revenue growth across all businesses, positive operating leverage, and significant capital returns, indicating a very bullish outlook."
-}
-```

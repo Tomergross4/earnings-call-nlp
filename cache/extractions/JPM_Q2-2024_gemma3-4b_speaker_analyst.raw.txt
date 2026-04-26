@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The analyst expresses cautious optimism regarding capital returns, citing potential Fed revisions and stable deposit balances, while also highlighting concerns about over-earning and the need for disciplined capital deployment."
-}
-```

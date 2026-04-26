@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The CEO highlights positive financial results (net income, EPS, RoTCE) and revenue growth in key areas like Banking and Services, while acknowledging expense increases and a decline in Markets. The overall tone is cautiously optimistic, reflecting strategic initiatives and a focus on efficiency."
-}
-```

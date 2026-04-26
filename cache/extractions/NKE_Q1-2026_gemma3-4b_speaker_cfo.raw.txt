@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CFO highlights significant headwinds including declining revenues, margin pressures due to tariffs and discounts, and challenges in key markets like Greater China, indicating a bearish outlook."
-}
-```

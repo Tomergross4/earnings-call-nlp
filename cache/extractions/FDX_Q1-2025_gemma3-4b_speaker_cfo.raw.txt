@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CFO expresses concerns about revenue softness, declining profitability, and a narrowed EPS outlook, coupled with a need to adjust the business to a challenging environment, indicating a bearish sentiment."
-}
-```

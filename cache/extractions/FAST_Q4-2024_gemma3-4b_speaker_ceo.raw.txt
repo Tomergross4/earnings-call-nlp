@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CEO expresses significant concerns regarding declining sales, facility shutdowns, and a concerning trend of customer activity decline, indicating a bearish outlook."
-}
-```

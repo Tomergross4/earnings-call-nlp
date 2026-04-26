@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses strong optimism regarding BlackRock's growth trajectory, citing record inflows, diversified revenue streams, successful acquisitions, and innovative ventures in digital assets and tokenization, indicating a very bullish outlook."
-}
-```

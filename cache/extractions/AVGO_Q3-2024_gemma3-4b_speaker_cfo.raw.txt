@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.25, "rationale": "While there are strong revenue growth figures and positive margin improvements, concerns about margin compression, tax impacts, and the ongoing integration of VMware suggest a neutral sentiment."}
-```

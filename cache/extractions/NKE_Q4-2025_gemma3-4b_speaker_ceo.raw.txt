@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.3,
-  "rationale": "The CEO expresses cautious optimism, acknowledging current challenges but highlighting strategic initiatives and positive momentum in specific areas like running and women's basketball, suggesting a gradual improvement."
-}
-```

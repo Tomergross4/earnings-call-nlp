@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.6, "rationale": "The analyst expresses concerns about sequential declines in GPU revenue, questions about guidance, and uncertainties regarding market trends and competitive pressures, indicating a bearish outlook."}
-```

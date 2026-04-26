@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.15, "rationale": "The CFO highlights significant revenue growth and profitability across multiple business segments, alongside positive trends in key metrics like AUM and client activity, indicating a generally positive financial performance."}
-```

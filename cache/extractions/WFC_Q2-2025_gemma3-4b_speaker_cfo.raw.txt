@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The CFO highlights several positive developments, including increased net income, improved credit quality, and revenue growth in several segments, alongside some concerns about future net interest income and a shift in balance sheet allocation."
-}
-```

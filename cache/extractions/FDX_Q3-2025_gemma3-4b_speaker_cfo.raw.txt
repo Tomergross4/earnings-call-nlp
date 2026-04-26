@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CFO repeatedly highlights headwinds (Postal Service, FedEx Freight, inflation, global economy) and lowered guidance, indicating a bearish outlook."
-}
-```

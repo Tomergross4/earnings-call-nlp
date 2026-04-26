@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.2, "rationale": "The analyst expresses cautious optimism regarding Intel's results and future prospects, highlighting concerns about gross margins, capacity, and strategic direction, resulting in a neutral sentiment."}
-```

@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.7, "rationale": "The CEO expresses significant growth figures (54%, 30%, 31%) and describes a revolutionary approach, but also acknowledges concerns about the European market and a somewhat chaotic outlook, creating a mixed sentiment."}
-```

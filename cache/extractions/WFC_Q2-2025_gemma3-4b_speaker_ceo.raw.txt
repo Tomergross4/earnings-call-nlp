@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CEO highlights significant positive developments including asset cap removal, reduced headcount, increased profitability, strategic investments, and a revised capital plan, indicating a strong and optimistic outlook."
-}
-```

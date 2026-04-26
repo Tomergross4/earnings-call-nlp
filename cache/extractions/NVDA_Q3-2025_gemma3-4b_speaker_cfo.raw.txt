@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.95,
-  "rationale": "The CFO's statements are overwhelmingly positive, highlighting record-breaking revenue, exceptional demand for NVIDIA products, significant advancements in AI technology, and strong growth across multiple markets, indicating a very bullish outlook."
-}
-```

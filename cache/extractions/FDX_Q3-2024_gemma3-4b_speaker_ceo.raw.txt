@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CEO highlights consistent operating income growth, margin expansion despite declining revenue, and significant cost savings from DRIVE initiatives, indicating a strong and positive outlook."
-}
-```

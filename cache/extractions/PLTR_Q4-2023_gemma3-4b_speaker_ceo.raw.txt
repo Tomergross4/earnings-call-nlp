@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.9, "rationale": "The CEO expresses overwhelmingly positive sentiment regarding extraordinary growth, significant contract numbers, and strategic shifts driven by AI, coupled with impactful deployments in critical global operations."}
-```

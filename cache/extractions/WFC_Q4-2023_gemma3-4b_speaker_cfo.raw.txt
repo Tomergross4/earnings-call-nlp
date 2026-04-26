@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "While the company reported strong net income and a healthy CET1 ratio, concerns about rising credit charges, declining loan balances, and challenges in commercial real estate significantly weigh down the overall sentiment."
-}
-```

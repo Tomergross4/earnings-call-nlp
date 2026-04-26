@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CEO highlights significant progress in addressing regulatory issues, improving operational efficiency, and driving revenue growth, indicating a cautiously optimistic outlook despite acknowledging some challenges."
-}
-```

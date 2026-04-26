@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.9, "rationale": "The CEO uses extremely enthusiastic and hyperbolic language ('bombastic numbers,' 'extraordinary numbers,' 'baller,' 'anomalous') expressing immense pride and confidence in the company's performance, suggesting a very bullish outlook."}
-```

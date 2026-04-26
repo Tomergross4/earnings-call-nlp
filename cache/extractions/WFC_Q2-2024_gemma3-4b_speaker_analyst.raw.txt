@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The analyst raises numerous concerns about deposit costs, NII, expense management, credit quality, and market opportunities, indicating a cautious and probing assessment of the company's performance and outlook."
-}
-```

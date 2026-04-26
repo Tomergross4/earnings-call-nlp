@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO highlights significant revenue growth, strong inflows across multiple asset classes (ETFs, private markets, whole portfolio solutions), and margin expansion, indicating a very bullish outlook."
-}
-```

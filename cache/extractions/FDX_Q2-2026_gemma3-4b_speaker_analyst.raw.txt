@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.7,
-  "rationale": "The analyst expresses cautious optimism regarding volume share and pricing upside, but also highlights significant headwinds including incentive comp, LTL decline, and the need to achieve business optimization targets, suggesting a neutral overall sentiment."
-}
-```

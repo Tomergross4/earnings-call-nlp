@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CFO highlighted strong financial results (up 9% earnings, increased net interest income, and solid growth across segments), alongside strategic initiatives like streamlining and share repurchases, indicating a generally positive outlook."
-}
-```

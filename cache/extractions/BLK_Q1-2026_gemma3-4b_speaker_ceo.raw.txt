@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO highlights significant inflows, strong growth metrics (organic fee growth, margins, ACV), and a positive outlook driven by client demand and strategic platform developments, indicating a very bullish sentiment."
-}
-```

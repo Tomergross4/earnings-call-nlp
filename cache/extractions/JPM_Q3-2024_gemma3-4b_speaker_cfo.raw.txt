@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CFO highlights declining revenue in Banking & Wealth Management, slowing customer yield-seeking activity, and concerns about the yield curve, indicating a bearish outlook."
-}
-```

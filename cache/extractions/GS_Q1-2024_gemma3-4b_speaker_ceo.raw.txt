@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses strong optimism regarding the firm's performance, highlighting record assets under supervision, revenue growth, and a constructive outlook for the capital markets and broader economy. They repeatedly emphasize durable businesses and significant opportunities, indicating a very bullish perspective."
-}
-```

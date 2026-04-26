@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.75, "rationale": "The analyst expresses significant concerns regarding regulatory uncertainty, the drag of Platform Solutions, and potential risks associated with rising interest rates, indicating a bearish outlook."}
-```

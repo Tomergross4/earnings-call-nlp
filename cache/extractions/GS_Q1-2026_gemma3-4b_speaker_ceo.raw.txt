@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CEO highlights strong financial results, record revenues, and significant inflows across multiple business lines, indicating a bullish outlook despite acknowledging macroeconomic headwinds."
-}
-```

@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.9, "rationale": "Strong revenue growth, record EBITDA, increased dividends, and debt reduction all indicate a very bullish outlook."}
-```

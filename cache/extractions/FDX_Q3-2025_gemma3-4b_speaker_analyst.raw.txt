@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.75, "rationale": "The transcript is filled with concerns about guidance cuts, macroeconomic uncertainty, margin pressures, and operational challenges, indicating a bearish outlook."}
-```

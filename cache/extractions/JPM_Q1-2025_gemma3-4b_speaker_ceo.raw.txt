@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CEO expresses significant concerns about a potential recession, anticipates increased credit losses, and highlights numerous global uncertainties, indicating a strongly bearish outlook."
-}
-```

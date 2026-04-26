@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO highlights strong financial results (revenue growth, EPS increase, ROE improvements), strategic initiatives, and a clear plan for future growth, indicating a highly positive outlook."
-}
-```

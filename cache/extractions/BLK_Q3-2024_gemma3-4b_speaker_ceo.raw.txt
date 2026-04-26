@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO highlights significant revenue growth, record inflows, and strong client relationships, indicating a very bullish outlook for BlackRock's future performance and strategic positioning."
-}
-```

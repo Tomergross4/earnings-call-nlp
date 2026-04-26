@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.95,
-  "rationale": "The CEO's statements are overwhelmingly positive, highlighting record revenue, significant growth rates, strong demand across multiple markets (data center, cloud, enterprise, client, gaming), and ambitious plans for future AI products and partnerships. There are no negative indicators or concerns expressed."
-}
-```

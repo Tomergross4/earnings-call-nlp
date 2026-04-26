@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.7, "rationale": "The analyst repeatedly expresses optimism about revenue growth, particularly regarding AI and GPU demand, and pushes for details on customer engagements, product ramps, and competitive positioning, indicating a generally bullish outlook."}
-```

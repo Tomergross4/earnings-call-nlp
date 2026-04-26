@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses overwhelmingly positive sentiment regarding revenue growth, record bookings, and accelerating AI revenue, coupled with significant new customer orders and a revised, improved outlook for fiscal 2026. The repeated emphasis on record highs and accelerating growth strongly indicates a bullish outlook."
-}
-```

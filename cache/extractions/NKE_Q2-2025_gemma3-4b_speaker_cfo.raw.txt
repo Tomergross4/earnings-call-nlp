@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CFO's comments highlight significant revenue declines, margin pressures, and inventory challenges, indicating a bearish outlook for the company's near-term performance."
-}
-```

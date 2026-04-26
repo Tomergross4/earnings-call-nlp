@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CFO's statements are overwhelmingly positive, highlighting record revenue, significant growth in key product lines (data center, Blackwell), substantial market opportunities (AI infrastructure spend), and strong adoption rates across various industries and geographies."
-}
-```

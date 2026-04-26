@@ -42,6 +42,7 @@ desktop.ini
 # --- Model artifacts (large, regenerable) ------------------------------------
 cache/setfit_model/
 cache/finbert_finetuned/
+cache/extractions/*.txt
 checkpoints/
 
 # --- Pre-polish / scratch ----------------------------------------------------

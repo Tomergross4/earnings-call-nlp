@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.1,
-  "rationale": "The CEO expresses concerns about challenging market conditions (2% sales growth, ISM index), acknowledges operational difficulties (hurricanes, power outages), and emphasizes cost control measures, indicating a cautiously optimistic but primarily neutral sentiment."
-}
-```

@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The CFO highlights both headwinds (declining lifestyle sales, digital decline, China traffic issues) and positive developments (strong performance in sport, new product releases, cost savings, and increased investment), indicating a cautiously optimistic outlook."
-}
-```

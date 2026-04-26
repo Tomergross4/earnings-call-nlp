@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.2, "rationale": "The CEO expresses cautious optimism, highlighting positive results like EPS growth and fee revenue, alongside concerns about revenue decline and economic uncertainty, indicating a neutral stance."}
-```

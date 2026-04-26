@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CEO expresses confidence in progress, highlighting strategic actions, inventory removal, and investments in key areas like running and football, indicating a cautiously optimistic outlook despite near-term pressure."
-}
-```

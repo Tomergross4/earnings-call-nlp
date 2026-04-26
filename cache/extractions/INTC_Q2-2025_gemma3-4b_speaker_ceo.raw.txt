@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The CEO acknowledges challenges (restructuring, past investments) but expresses a commitment to strategic initiatives and a disciplined approach, suggesting a cautiously optimistic outlook."
-}
-```

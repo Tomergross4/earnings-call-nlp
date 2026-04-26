@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.6, "rationale": "The CFO highlights strong revenue growth in Data Center and Client segments, coupled with significant investments in R&D and AI, indicating a cautiously optimistic outlook despite declines in Gaming and Embedded segments."}
-```

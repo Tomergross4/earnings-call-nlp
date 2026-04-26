@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "While the CFO highlights progress and confidence in certain areas (North America, Win Now actions), the overall tone is cautious due to persistent headwinds like tariffs, China challenges, and uneven geographic performance, suggesting a neutral sentiment."
-}
-```

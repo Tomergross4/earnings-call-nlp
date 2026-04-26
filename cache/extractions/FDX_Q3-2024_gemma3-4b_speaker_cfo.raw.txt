@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CFO expresses optimism regarding ongoing progress, margin expansion, and cost savings initiatives, particularly driven by DRIVE and workforce reductions, indicating a generally positive outlook despite declining revenue."
-}
-```

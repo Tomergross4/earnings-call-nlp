@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.6, "rationale": "The analyst expresses cautious optimism, highlighting growth trends, revenue projections, and acknowledging potential challenges like software pushouts and margin shifts, indicating a generally neutral stance."}
-```

@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.15,
-  "rationale": "While the CFO highlights record revenue and strong growth in several segments, significant headwinds like the U.S. export controls, a declining gross margin (even after excluding the one-time charge), and a lower-than-expected EPS create a cautiously optimistic, slightly bearish sentiment."
-}
-```

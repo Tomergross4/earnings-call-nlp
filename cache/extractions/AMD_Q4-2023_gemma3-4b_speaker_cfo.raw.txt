@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.8, "rationale": "The CFO expresses optimism about Data Center and Client segment growth, anticipates significant declines in Gaming and Embedded, and highlights gross margin expansion driven by Data Center and AI opportunities, indicating a generally bullish outlook."}
-```

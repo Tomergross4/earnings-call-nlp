@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses strong optimism regarding Q2 results, highlighting revenue growth, margin expansion, and resilience despite numerous challenges, indicating a very bullish outlook."
-}
-```

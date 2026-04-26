@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CEO expresses cautious optimism, highlighting positive trends like wholesale growth, a stronger brand mix, and the rollout of new innovation platforms, while also acknowledging challenges with margins and tariffs, indicating a balanced and proactive approach."
-}
-```

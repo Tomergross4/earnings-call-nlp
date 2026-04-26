@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CFO expresses cautious optimism, highlighting revenue growth, margin expansion, and strategic initiatives like the stock repurchase program and the FedEx Freight spinoff. While acknowledging headwinds and uncertainties, the overall tone is one of continued execution and a commitment to shareholder value, leaning slightly bullish."
-}
-```

@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.6, "rationale": "The analyst expresses concerns about inventory, unit disappointments, and revenue outlook, indicating a generally negative assessment."}
-```

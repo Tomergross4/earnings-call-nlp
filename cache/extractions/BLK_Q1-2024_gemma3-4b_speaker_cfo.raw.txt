@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CFO's remarks are overwhelmingly positive, highlighting record AUM, significant inflows, margin expansion, revenue growth, and strategic acquisitions, indicating strong confidence in the company's performance and future prospects."
-}
-```

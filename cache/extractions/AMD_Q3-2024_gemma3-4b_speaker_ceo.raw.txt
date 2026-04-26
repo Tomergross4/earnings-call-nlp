@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO highlights record revenue growth, significant increases in key segments (Data Center, Cloud), substantial market share gains, and ambitious plans for future product development and acquisitions, indicating a very bullish outlook."
-}
-```

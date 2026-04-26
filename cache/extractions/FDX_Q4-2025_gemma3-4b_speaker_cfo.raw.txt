@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CFO expresses strong optimism regarding FedEx's performance, highlighting revenue growth, cost reductions, share repurchases, and a significant increase in free cash flow conversion. They also detail plans for future growth and strategic initiatives, indicating a very bullish outlook."
-}
-```

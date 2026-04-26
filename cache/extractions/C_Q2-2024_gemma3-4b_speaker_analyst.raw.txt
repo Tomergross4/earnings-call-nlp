@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.8, "rationale": "The analyst expresses significant concern through repeated criticisms of the consent order, regulatory management, and the company's performance, using phrases like 'failing grades,' 'doesn't seem like it's that much higher,' and 'huge drag on profitability,' indicating a strongly bearish outlook."}
-```

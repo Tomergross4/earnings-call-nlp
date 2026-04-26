@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CEO expresses cautious optimism about the short-term economic outlook, highlighting positive factors like consumer spending and deregulation, while acknowledging significant geopolitical risks and potential economic headwinds. The discussion of investments in technology and competitive pressures suggests a moderately bullish stance, tempered by a realistic assessment of challenges."
-}
-```

@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.6,
-  "rationale": "The analyst expresses significant concerns regarding revenue guidance, capital management, regulatory hurdles, and the potential for Citi to fall behind competitors in the stablecoin space, indicating a bearish outlook."
-}
-```

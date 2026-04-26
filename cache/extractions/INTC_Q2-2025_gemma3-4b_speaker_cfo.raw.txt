@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.7,
-  "rationale": "The CFO expresses concerns about declining gross margins due to the mix shift towards Lunar Lake and the early ramp of Panther Lake, indicating a bearish outlook."
-}
-```

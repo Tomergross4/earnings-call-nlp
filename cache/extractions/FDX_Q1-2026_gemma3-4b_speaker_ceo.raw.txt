@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CEO expresses optimism regarding the company's performance, highlighting revenue growth, cost reductions, and strategic initiatives like Network 2.0 and the digital twin. They acknowledge headwinds but emphasize resilience and a strong outlook, particularly regarding data's importance for future growth and AI applications."
-}
-```

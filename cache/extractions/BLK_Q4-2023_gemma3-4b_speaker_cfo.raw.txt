@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CFO highlights strong inflows, revenue growth, and margin expansion, indicating a positive outlook despite market challenges and restructuring costs."
-}
-```

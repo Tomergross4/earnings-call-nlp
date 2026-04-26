@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.8, "rationale": "The analyst expresses significant concern regarding macroeconomic uncertainty, rising recession risks, and potential shifts in regulatory landscapes, coupled with a cautious outlook on market performance and customer behavior, indicating a bearish sentiment."}
-```

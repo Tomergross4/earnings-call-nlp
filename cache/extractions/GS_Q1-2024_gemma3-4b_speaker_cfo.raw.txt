@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CFO highlights strong revenue growth, record assets under supervision, significant inflows, and positive performance across multiple business segments, indicating a very bullish outlook."
-}
-```

@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.65,
-  "rationale": "The analyst expresses significant concern through repeated questioning of Jamie's outlook, highlighting uncertainties regarding economic trends, capital levels, and investment strategies, suggesting a bearish perspective."
-}
-```

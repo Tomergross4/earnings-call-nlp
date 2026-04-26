@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CEO highlights strong financial performance across multiple business segments, including revenue growth, increased profitability (RoTCE), and strategic initiatives like share repurchases and technology investments. The overall tone is optimistic and confident about the company's future."
-}
-```

@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.75, "rationale": "The analyst expresses significant concerns through repeated questioning about revenue declines, shifting customer priorities, supply constraints, and the potential for Broadcom to fall behind in the AI silicon market, indicating a bearish outlook."}
-```

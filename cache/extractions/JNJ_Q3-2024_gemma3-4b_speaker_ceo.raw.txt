@@ -1,3 +1,0 @@
-```json
-{"sentiment": 0.9, "rationale": "The CEO highlights strong sales growth, key product successes (DARZALEX), numerous approvals, and increased confidence in long-term growth, indicating a very bullish outlook."}
-```

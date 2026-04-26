@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CFO expresses strong optimism regarding the firm's performance, highlighting record revenues, significant growth in key segments (Global Banking & Markets, Equities), a substantial increase in assets under supervision, and a positive outlook for 2026. They explicitly state 'optimistic on the forward outlook' and 'confident in our ability to deliver.'"
-}
-```

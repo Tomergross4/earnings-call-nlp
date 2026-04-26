@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CEO expresses optimism about future growth driven by AI, highlights significant progress in product development (Intel 18A, 14A, client roadmap), and acknowledges challenges related to supply constraints and yield improvements, indicating a cautiously optimistic outlook."
-}
-```

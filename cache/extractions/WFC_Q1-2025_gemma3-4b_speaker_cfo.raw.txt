@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The CFO highlighted solid results, revenue growth, expense reductions, and improved credit quality, but also expressed caution regarding future net interest income and acknowledged increased volatility, indicating a neutral sentiment."
-}
-```

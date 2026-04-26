@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.6, "rationale": "The analyst expresses numerous concerns regarding yield issues, gross margin challenges, supply constraints, and the uncertain timing of key product launches, indicating a bearish outlook."}
-```

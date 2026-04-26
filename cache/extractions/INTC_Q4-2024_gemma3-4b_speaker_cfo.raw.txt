@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The CFO expresses significant concerns regarding Intel Foundry's financial performance, highlighting substantial losses, cost issues, and a cautious revenue outlook, indicating a bearish assessment."
-}
-```

@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.6,
-  "rationale": "The CEO highlights revenue growth, cost reduction efforts, and positive momentum in key product areas (Intel Foundry, Products), alongside necessary restructuring charges and portfolio simplification. While acknowledging challenges, the overall tone is cautiously optimistic due to strategic initiatives and market opportunities."
-}
-```

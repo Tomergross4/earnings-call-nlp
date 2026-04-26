@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.6,
-  "rationale": "The analyst repeatedly expresses concerns about declining gross margins, patient mix issues, and headwinds in MedTech, indicating a bearish outlook."
-}
-```

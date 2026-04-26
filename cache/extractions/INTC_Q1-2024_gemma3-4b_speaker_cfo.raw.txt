@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.3,
-  "rationale": "The CFO highlights positive revenue growth, margin improvements, and a clear path to future profitability, indicating a cautiously optimistic outlook despite short-term challenges."
-}
-```

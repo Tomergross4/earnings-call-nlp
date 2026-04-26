@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.95,
-  "rationale": "The CEO expresses overwhelmingly positive sentiment regarding the firm's performance, highlighting significant growth metrics, improved returns, and strategic initiatives, indicating a very bullish outlook."
-}
-```

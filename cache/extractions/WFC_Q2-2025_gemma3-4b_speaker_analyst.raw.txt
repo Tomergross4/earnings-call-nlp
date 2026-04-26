@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.75, "rationale": "The analyst expresses significant concern about potential profitability issues, repeatedly questioning growth assumptions and the impact on ROTCE, indicating a bearish outlook."}
-```

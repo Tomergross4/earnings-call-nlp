@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The analyst expresses significant concern and skepticism regarding FedEx's operating leverage, repeatedly questioning the company's ability to translate revenue growth and cost reductions into improved profitability, highlighting inconsistencies and uncertainties in the provided guidance."
-}
-```

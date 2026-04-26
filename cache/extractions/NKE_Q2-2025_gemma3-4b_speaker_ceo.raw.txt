@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The CEO expresses a desire to revitalize NIKE, acknowledging challenges but emphasizing a renewed focus on sport, athlete insights, and a return to core strengths, indicating a cautiously optimistic outlook."
-}
-```

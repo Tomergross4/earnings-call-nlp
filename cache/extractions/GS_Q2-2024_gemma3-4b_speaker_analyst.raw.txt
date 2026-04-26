@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.7,
-  "rationale": "The analyst expresses a generally positive sentiment, highlighting numerous successes (record financing, revenue growth, efficiency improvements, dividend increase, high CET1 ratio) while acknowledging a gap between returns and targets. The repeated emphasis on positive developments and strategic initiatives leans towards a bullish assessment."
-}
-```

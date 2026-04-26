@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The analyst expresses cautious optimism, highlighting growth areas like Data Center GPU and EPYC while acknowledging potential headwinds and uncertainties regarding supply chain, competition, and market trends."
-}
-```

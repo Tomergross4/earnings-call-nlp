@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO highlights substantial revenue growth, record inflows, significant AUM increases, and successful fundraising across multiple initiatives (GIP, HPS, Preqin), indicating a very bullish outlook."
-}
-```

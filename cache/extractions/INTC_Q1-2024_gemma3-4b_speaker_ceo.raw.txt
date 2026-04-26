@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.8,
-  "rationale": "The CEO expresses strong optimism regarding Intel's strategic shifts, highlighting significant milestones, revenue growth projections, and cost-saving initiatives, indicating a very bullish outlook."
-}
-```

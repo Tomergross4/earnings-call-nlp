@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.7, "rationale": "The analyst expresses concerns about declining gross margins, potential tariffs, biosimilar erosion, and recession risks, indicating a bearish outlook."}
-```

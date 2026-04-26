@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.75,
-  "rationale": "The analyst expresses significant concern through repeated questions about potential risks (asset cap, Banamex IPO, regulatory issues, credit provisions, and revenue targets), highlighting a bearish outlook on Citi's performance and future prospects."
-}
-```

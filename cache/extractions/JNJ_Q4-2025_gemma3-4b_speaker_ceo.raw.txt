@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO expresses extreme excitement and confidence regarding the company's strong full-year results, highlighting significant growth, new product launches, and a robust pipeline, indicating a very bullish outlook."
-}
-```

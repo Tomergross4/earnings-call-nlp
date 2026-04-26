@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO's remarks are overwhelmingly positive, highlighting significant revenue growth, successful product launches (like CARVYKTI and TREMFYA), FDA approvals, and strong market positions across multiple therapeutic areas. The language used ('powerful new era,' 'accelerating,' 'momentum is strong') indicates a very bullish outlook."
-}
-```

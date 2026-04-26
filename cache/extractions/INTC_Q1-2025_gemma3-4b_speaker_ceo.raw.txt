@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.2,
-  "rationale": "The CEO expresses a desire to turn around the company, focusing on operational improvements, cultural change, and strategic priorities, indicating a cautiously optimistic outlook despite acknowledging challenges and the need for significant changes."
-}
-```

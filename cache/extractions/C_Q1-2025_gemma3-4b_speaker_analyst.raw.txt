@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": -0.65,
-  "rationale": "The analyst expresses significant concern regarding multiple risks including trade wars, credit deterioration, NII uncertainty, and potential fragility in ROTCE guidance, coupled with questions about buyback strategy and capital optimization, indicating a bearish outlook."
-}
-```

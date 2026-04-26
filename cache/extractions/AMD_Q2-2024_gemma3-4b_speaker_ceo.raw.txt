@@ -1,6 +1,0 @@
-```json
-{
-  "sentiment": 0.9,
-  "rationale": "The CEO highlights significant revenue growth across multiple segments, including Data Center GPU, Client processors, and overall company revenue, driven by strong demand for AMD's Instinct and ROCm technologies and strategic acquisitions, indicating a very bullish outlook."
-}
-```

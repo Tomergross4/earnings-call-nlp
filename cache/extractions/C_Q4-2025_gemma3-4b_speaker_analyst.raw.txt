@@ -1,3 +1,0 @@
-```json
-{"sentiment": -0.75, "rationale": "The analyst expresses significant concern and skepticism regarding Citi's performance, highlighting discrepancies between growth areas (loans, trading assets) and RoTCE, questioning the sustainability of fee growth, and expressing doubts about the regulatory process, indicating a bearish outlook."}
-```
