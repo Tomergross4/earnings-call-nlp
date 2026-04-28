@@ -55,7 +55,7 @@ Opens at http://localhost:8501. Five tabs, mapped to the assignment rubric:
 - **Task 1 — Per-Call** — searchable table of all 131 calls with drill-down: sentiment, wins, risks, themes, guidance, pre-call momentum, full transcript link.
 - **Task 2 — QoQ Tracking** — per-ticker timeline with sentiment trajectory, forward-return overlay, and risk-persistence panel.
 - **Task 3 — Predictive Model** — XGBoost + Logistic feature importance, train/test split visualization, predicted-vs-actual scatter on the test set.
-- **Task 4 — Backtest** — Contrarian SetFit equity curve (+0.14 Sharpe at 21d / +0.46 at 63d), 8-signal comparison table, horizon sweep.
+- **Task 4 — Backtest** — SetFit-based signals (+0.13 Sharpe direct at 21d, +0.79 Contrarian at 5d, +0.58 Contrarian at 63d), 8-signal comparison table, horizon sweep.
 
 ## Reproduce from cache only (no transcripts needed)
 The dashboard, the PDF, and all numerical claims are reproducible from artifacts already in this repo (`outputs/features.parquet`, `outputs/writeup_results.json`, `outputs/model_predictions.parquet`, `cache/prices/`). You do **not** need `ECT.zip` for any of:

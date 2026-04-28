@@ -103,7 +103,7 @@ class SetFitModel:
 
 
 def fit_setfit(train_df: pd.DataFrame, force: bool = False,
-               num_iterations: int = 20) -> SetFitModel:
+               num_iterations: int = 5) -> SetFitModel:
     """SetFit-style fine-tuning via sentence-transformers (no setfit package needed).
 
     Algorithm:

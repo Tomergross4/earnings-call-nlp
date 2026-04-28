@@ -536,7 +536,7 @@ def render(md: str) -> list:
         ("131",   "Transcripts"),
         ("14",    "Tickers"),
         ("8",     "Signals tested"),
-        ("+0.46", "Best Sharpe (63d)"),
+        ("+0.79", "Best Sharpe (5d)"),
     ]
     nlp_eval_path = ROOT / "outputs" / "nlp_evaluation.json"
     if nlp_eval_path.exists():
@@ -557,9 +557,9 @@ def render(md: str) -> list:
         "and predicts forward excess return over SPY on a strict 70/30 per-ticker temporal "
         "split, with dynamic T+0/T+1 entry adjusted for BMO vs. AMC reporting habits. Eight "
         "signals are compared end-to-end across four horizons (1d, 5d, 21d, 63d). The "
-        "Contrarian SetFit signal is the headline finding — its hit rate climbs monotonically "
-        "with horizon and the 63-day configuration is the only one in the suite with positive "
-        "hit rate (0.548), positive rank IC (+0.123), and positive naïve Sharpe (+0.46)."
+        "retrained SetFit (5 contrastive iterations) earns a direct +0.13 Sharpe at 21d "
+        "(hit 0.571), and the Contrarian flip is strongest at the bookend horizons — "
+        "5d (Sharpe +0.79, IC +0.174) and 63d (Sharpe +0.58, hit 0.567, IC +0.137)."
     ))
     flow.append(Spacer(1, SECTION_GAP))
 

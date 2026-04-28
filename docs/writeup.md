@@ -221,7 +221,7 @@ toward Hold for the balanced-class-weight models in early runs.
 
 ## 6. Results
 
->> **Contrarian SetFit** is the only signal in the suite with both hit rate >0.5 (0.528) and positive Sharpe (+0.14) at 21d, and it is the only one whose hit rate climbs monotonically with horizon (0.405 → 0.524 → 0.528 → 0.548 across 1d / 5d / 21d / 63d). The strongest configuration is the **63-day horizon**: hit 0.548, rank IC +0.123, Sharpe +0.46 — the only horizon-signal pair with all three of hit, IC, and Sharpe positive simultaneously. Logistic regression matches Contrarian SetFit's 21d hit rate (0.531) but earns essentially zero Sharpe.
+>> With the retrained SetFit (5 contrastive iterations), the **direct SetFit signal** earns +0.13 Sharpe at 21d (hit 0.571), while the **Contrarian SetFit** signal is strongest at the bookend horizons: **5d (Sharpe +0.79, IC +0.174)** and **63d (Sharpe +0.58, hit 0.567, IC +0.137, +7.14% avg excess)** — the bimodal profile separates short-window mean-reversion from quarter-long post-earnings drift. Logistic regression has the highest 21d hit rate (0.531) but earns near-zero Sharpe.
 
 Time-series backtest on the test set (n=36 with settled returns at 21d). Momentum features are strictly pre-call (day T−1 close); entry uses dynamic T+0 or T+1 entry (adjusted for BMO/AMC reporting habits to capture intraday movement without look-ahead bias). Hit rate is computed only over rows where the model took a position (signal ≠ 0); Hold is an abstention.
 
@@ -231,39 +231,39 @@ Time-series backtest on the test set (n=36 with settled returns at 21d). Momentu
 | LM lexicon sign | 36 | 35 | 0.343 | -0.187 | 0.500 | -0.85 |
 | FinBERT sign | 36 | 36 | 0.333 | -0.252 | 0.500 | -1.11 |
 | **Logistic regression** | **36** | **32** | **0.531** | -0.043 | 0.483 | -0.04 |
-| XGBoost (Optuna) | 36 | 32 | 0.281 | -0.288 | 0.350 | -1.32 |
-| CatBoost (Optuna) | 36 | 31 | 0.323 | -0.133 | 0.410 | -1.01 |
-| SetFit (contrastive) | 36 | 36 | 0.472 | +0.000 | 0.424 | -0.14 |
-| **Contrarian SetFit** | **36** | **36** | **0.528** | +0.000 | 0.414 | **+0.14** |
+| XGBoost (Optuna) | 36 | 32 | 0.375 | -0.098 | 0.353 | -0.66 |
+| CatBoost (Optuna) | 36 | 35 | 0.400 | +0.022 | 0.488 | -0.45 |
+| **SetFit (contrastive)** | **36** | **35** | **0.571** | +0.053 | 0.444 | **+0.13** |
+| Contrarian SetFit | 36 | 35 | 0.429 | -0.053 | 0.412 | -0.13 |
 
 **Multi-horizon Contrarian SetFit.** Same signal, four forward-return horizons, recomputed on the largest test sample available at each horizon:
 
 | Horizon | n | Hit | Rank IC | Avg excess | Sharpe |
 |---|---|---|---|---|---|
-| 1d | 42 | 0.405 | -0.142 | -0.22% | -1.13 |
-| 5d | 42 | 0.524 | -0.032 | -0.01% | -0.01 |
-| 21d | 36 | 0.528 | +0.000 | +0.30% | +0.14 |
-| **63d** | **31** | **0.548** | **+0.123** | **+5.74%** | **+0.46** |
+| 1d | 42 | 0.463 | -0.004 | -0.14% | -0.70 |
+| 5d | 42 | 0.585 | +0.174 | +0.50% | +0.79 |
+| 21d | 36 | 0.429 | -0.053 | -0.27% | -0.13 |
+| **63d** | **31** | **0.567** | **+0.137** | **+7.14%** | **+0.58** |
 
-The 1-day horizon is sharply negative — the same-day / next-day move overshoots and the contrarian bet fades immediately. By 5d the contrarian signal has clawed back to neutral (Sharpe ≈ 0), and the *quarter-long* 63-day horizon is where the reversal actually pays: hit rate 0.548, positive rank IC, +5.74% average excess, Sharpe +0.46. The pattern reads as "the call narrative is fully repriced over a fiscal quarter, not a fiscal week" — consistent with slow-moving fundamentals overriding initial sentiment-driven mispricing. Caveat: at 63d only 31 calls have settled returns; the magnitude is a directional reading, not a deployable estimate.
+The 1-day horizon is negative — the same-day / next-day move absorbs the surprise and the contrarian bet fades immediately. By 5d the contrarian signal turns sharply positive (+0.79 Sharpe, +0.174 IC), reflecting the early stages of post-earnings drift reversal. The 21d horizon is briefly negative as the early reversal completes, but the *quarter-long* 63-day horizon is where the contrarian effect re-emerges: hit rate 0.567, rank IC +0.137, +7.14% average excess, Sharpe +0.58. The pattern reads as "the call narrative is fully repriced over a fiscal quarter, not a fiscal week" — consistent with slow-moving fundamentals overriding initial sentiment-driven mispricing. Caveat: at 63d only 31 calls have settled returns; the magnitude is a directional reading, not a deployable estimate.
 
 **Per-ticker breakdown — Contrarian SetFit at 21d.** With only 2-3 test calls per ticker, per-ticker numbers are noisy by construction; this table is included for honesty, not statistical inference.
 
 | Ticker | Test n | Hits | Hit rate | Avg PnL |
 |---|---|---|---|---|
-| AVGO | 3 | 3 | 1.000 | +4.31% |
+| FDX | 3 | 3 | 1.000 | +3.26% |
 | PLTR | 3 | 3 | 1.000 | +7.81% |
-| FDX | 3 | 2 | 0.667 | -0.77% |
 | INTC | 3 | 2 | 0.667 | +5.04% |
 | WFC | 3 | 2 | 0.667 | +1.62% |
-| BLK | 2 | 1 | 0.500 | -2.85% |
-| GS | 2 | 1 | 0.500 | +0.46% |
 | JNJ | 2 | 1 | 0.500 | +4.65% |
 | NKE | 2 | 1 | 0.500 | -1.99% |
-| AMD | 3 | 1 | 0.333 | -7.98% |
+| AVGO | 3 | 1 | 0.333 | +0.32% |
 | C | 3 | 1 | 0.333 | +0.10% |
 | NVDA | 3 | 1 | 0.333 | -1.19% |
+| AMD | 3 | 0 | 0.000 | -9.22% |
+| BLK | 2 | 0 | 0.000 | -8.75% |
 | FAST | 2 | 0 | 0.000 | -6.52% |
+| GS | 2 | 0 | 0.000 | -1.93% |
 | JPM | 2 | 0 | 0.000 | -1.86% |
 
 >> Critical caveat: the train period (Q4 2023 – Q2 2025) was a strong-up regime (P(up) = 0.607, avg excess +2.48%); the test period (Q3 2025 – early 2026) was flat-to-down (P(up) = 0.361, avg excess -1.65%). All four semis (AMD, AVGO, NVDA, PLTR) and BLK had **zero** up-days in the test set. Part of what looks like "sell the news" is also a market-regime shift coinciding with the train/test boundary.
@@ -271,7 +271,7 @@ The 1-day horizon is sharply negative — the same-day / next-day move overshoot
 Equity curve for the logistic signal: `outputs/figures/equity_curve.png`.
 Cross-sectional curve: `outputs/figures/equity_cross_sectional.png`.
 
-**Key finding: "sell the news" effect, quarter-long timescale.** Six of eight directional signals show negative rank IC at 21d, and the cross-signal consistency points to a systematic "buy the rumor, sell the news" regime *over the test window*. The horizon table localizes the effect: at 1d the contrarian signal is sharply negative (the immediate gap absorbs and overshoots the surprise), by 5d it has rebounded to neutral, at 21d it earns a marginal +0.14 Sharpe, and the reversal compounds out to **63d (Sharpe +0.46, hit 0.548, IC +0.123)**. With 31–42 observations per horizon this is not statistically significant, but the monotone progression of hit rate with horizon is directionally consistent with both microstructure (post-earnings drift reversal) and the corpus-level regime shift documented above.
+**Key finding: "sell the news" effect, multi-horizon profile.** The retrained SetFit (5 contrastive iterations) now produces a *direct* +0.13 Sharpe at 21d (hit 0.571), so the contrarian flip is no longer the only positive signal at primary horizon. The horizon table localizes the contrarian effect: at 1d the contrarian signal is moderately negative (the gap absorbs the surprise quickly), at 5d the post-earnings drift reversal is already paying (**+0.79 Sharpe, IC +0.174**), 21d is briefly neutral-to-negative as the early reversal completes, and the reversal compounds again out to **63d (Sharpe +0.58, hit 0.567, IC +0.137, +7.14% average excess)**. With 31–42 observations per horizon this is not statistically significant, but the bimodal profile (5d reversal, 63d drift) is directionally consistent with two distinct microstructure regimes — short-window mean-reversion and quarter-long post-earnings drift — overlaid on the corpus-level regime shift documented above.
 
 ## 7. Per-ticker qualitative read
 
@@ -370,7 +370,7 @@ prepared remarks performed better on average.
 - [x] **Loughran-McDonald lexicon baseline** for LLM comparison.
 - [x] **Nonlinear models (XGBoost + CatBoost)** both with Optuna hyperparameter tuning and TimeSeriesSplit CV.
 - [x] **SetFit contrastive fine-tuning** — manual sentence-encoder fine-tuning + logistic head.
-- [x] **Contrarian signal** — systematic inversion of SetFit probabilities exploiting the sell-the-news effect; the only positive-Sharpe configuration in the suite at 21d (+0.14) and the strongest at 63d (Sharpe +0.46, hit 0.548, IC +0.123). Hit rate climbs monotonically with horizon.
+- [x] **Contrarian signal** — systematic inversion of SetFit probabilities exploiting the sell-the-news effect; the strongest signal at 5d (Sharpe +0.79, IC +0.174) and 63d (Sharpe +0.58, hit 0.567, IC +0.137, +7.14% avg excess). With the retrained SetFit, the *direct* signal earns +0.13 Sharpe at 21d (hit 0.571), so the suite now has two positive-Sharpe configurations.
 - [x] **Interactive Streamlit dashboard** — per-call explorer, ticker timeline, live backtest.
 - [x] **70/30 temporal split with k-fold CV** on training set.
 - [x] **F1 binary + F1 macro + precision + recall** reported for all 8 signals.
@@ -505,8 +505,8 @@ decision band on it. Improved Logistic regression's hit rate from 0.472 to 0.531
 - **Small sample.** With 36 settled test observations at 21d across 14 tickers
   (≈2.6 per ticker), every metric has enormous sampling variance. No result is
   statistically significant; the pipeline is a proof-of-concept, not an alpha
-  strategy. A bootstrap 95% CI on the +0.14 Sharpe at 21d (or the +0.46 at 63d
-  on n=31) would comfortably cross zero.
+  strategy. A bootstrap 95% CI on the +0.13 Sharpe at 21d (direct SetFit) or the
+  +0.58 at 63d (Contrarian, n=31) would comfortably cross zero.
 - **Train/test regime shift (see §10).** P(up) drops from 0.607 in train to
   0.361 in test; every semi name in the test set has zero up-days. The "sell the
   news" finding is partly genuine microstructure (visible at 63d) and partly
@@ -519,8 +519,9 @@ decision band on it. Improved Logistic regression's hit rate from 0.472 to 0.531
   QoQ deltas use `groupby.diff()` (past-only). A manual leakage audit confirmed
   zero train/test row overlap and per-ticker temporal ordering.
 - **Horizon sensitivity now reported.** §6 includes 1d/5d/21d/63d for the
-  Contrarian SetFit signal. The 63d horizon is the strongest (Sharpe +0.46)
-  and the 1d the weakest (-1.13) — characterizing the regime properly.
+  Contrarian SetFit signal. The 5d horizon (Sharpe +0.79) and 63d horizon
+  (Sharpe +0.58) are the strongest; 1d and 21d are negative — a bimodal
+  reversal/drift profile rather than a monotone one.
 
 ---
 
