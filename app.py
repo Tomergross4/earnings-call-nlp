@@ -1374,7 +1374,7 @@ with tab4:
                 "vs. buy-and-hold SPY (absolute)</div>",
                 unsafe_allow_html=True)
     st.caption("Strategy: invert the SetFit P(up) — long when the model says down, short when it says up. "
-               "This is our +0.14 Sharpe production model at the 21d horizon. "
+               "Strongest at 5d (+0.79 Sharpe) and 63d (+0.58 Sharpe); marginal at 21d. "
                "Excess return = stock − SPY over 21 trading days starting at T+0 (BMO) or T+1 (AMC). "
                "SPY benchmark uses the same entry bar per call — zero look-ahead.")
 
@@ -1520,12 +1520,12 @@ with tab4:
         <div class='callout'>
         <b>Honest caveats.</b> Test set is 36 settled calls — too small for any single
         Sharpe to be statistically significant. The train→test regime shift (P(up) 0.61 → 0.36)
-        means a long-bias baseline mechanically underperforms in this window. The headline
-        positive-Sharpe finding (Contrarian SetFit at +0.46 over 63d, n=31) lives at the longer horizon;
-        at 21d the same signal earns +0.14 Sharpe, marginal. Hit rate climbs monotonically with
-        horizon (0.405 → 0.524 → 0.528 → 0.548), pointing to slow repricing of the call narrative
-        over a fiscal quarter. Read this as evidence that post-call sentiment over-shoots — not
-        as a deployable strategy.
+        means a long-bias baseline mechanically underperforms in this window. With the
+        retrained SetFit (5 contrastive iterations), the direct signal earns +0.13 Sharpe at 21d
+        (hit 0.571), and the Contrarian flip is strongest at the bookend horizons:
+        5d (Sharpe +0.79, IC +0.174) and 63d (Sharpe +0.58, hit 0.567, IC +0.137, n=31).
+        Read this as evidence of two distinct microstructure regimes (short-window mean-reversion
+        and quarter-long post-earnings drift) — not as a deployable strategy.
         </div>
         """,
         unsafe_allow_html=True,
